@@ -1,15 +1,17 @@
 import React from "react";
-import Link from 'next/link';
-import Image from 'next/image'
+import Link from "next/link";
+import Image from "next/image";
 import axios from "axios";
 
 import MenuMobile from "../MenuMobile";
 
 import { GiHamburgerMenu } from "react-icons/gi";
+import { BsFacebook } from "react-icons/bs";
+import { AiFillInstagram } from "react-icons/ai";
 
 import OutsideAlerter from "../OutsideAlerter";
 
-import "./styles.scss";
+import styles from "./styles.module.css";
 
 export default class Navbar extends React.Component {
   constructor(props) {
@@ -42,49 +44,54 @@ export default class Navbar extends React.Component {
     this.setState({ showServiceMenu: !this.state.showServiceMenu });
   }
 
-  async componentDidMount() {
-    const { data } = await axios.get("http://localhost:3001/api/getServices");
-    this.setState({ ...this.state, services: data.services });
-  }
+//   async componentDidMount() {
+//     const { data } = await axios.get("http://localhost:3001/api/getServices");
+//     this.setState({ ...this.state, services: data.services });
+//   }
 
   render() {
     return (
       <>
-        <nav>
+        <nav className={styles.nav_container}>
           {this.state.toggleMobileMenu && (
             <MenuMobile
               whenUserClicksOnXIcon={() => this.setToggleMobileMenu()}
             />
           )}
 
-          <div className="logo-links">
-            <Link to="/">
-              <Image src="/public/images/logo.jpg" alt="logo" />
-            </Link>
-            <ul className="responsive-links">
-              <li className="nav-item">
-                <Link to="/" className="nav-link">
+          <div className={styles.logo_links}>
+            <a href="/">
+              <Image src="/images/logo.jpg" width="100px" height="100px" alt="logo" />
+            </a>
+            <ul className={styles.responsive_links}>
+              <li className={styles.nav_item}>
+                <a href="/" className={styles.nav_link}>
                   Home
-                </Link>
+                </a>
               </li>
 
-              <li className="services" onClick={this.toggleShowServiceMenu}>
+              <li
+                className={styles.services}
+                onClick={this.toggleShowServiceMenu}
+              >
                 <OutsideAlerter
                   clickOutside={() => this.setState({ showServiceMenu: false })}
                 >
                   Services
                   {this.state.showServiceMenu ? (
-                    <div className="services-menu">
-                      <ul>
+                    <div className={styles.services_menu}>
+                      <ul className={styles.services_list}>
                         {this.state.services.map((service) => {
                           return (
-                            <li key={service.id}>
-                              <a
-                                href={`/services#${service.permalink}`}
-                                className="services-nav-link"
+                            <li
+                              className={styles.service_item}
+                              key={service.id}
+                            >
+                              <Link to={`/services#${service.permalink}`}
+                                className={styles.services_nav_link}
                               >
                                 {service.name}
-                              </a>
+                              </Link>
                             </li>
                           );
                         })}
@@ -96,44 +103,36 @@ export default class Navbar extends React.Component {
                 </OutsideAlerter>
               </li>
 
-              <li className="nav-item">
-                <Link to="/testimonials" className="nav-link">
+              <li className={styles.nav_item}>
+                <a href="/testimonials" className={styles.nav_link}>
                   Testimonials
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/contact" className="nav-link">
+                <a href="/contact" className={styles.nav_link}>
                   Contact
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
 
-          <div className="social-icons-container">
-            <a
-              href="https://www.facebook.com/Dietrich-Land-Care-LLC-571934750168436"
+          <div className={styles.social_icons_container}>
+            <a href="https://www.facebook.com/Dietrich-Land-Care-LLC-571934750168436"
               target="_blank"
               rel="noreferrer"
             >
-              <FontAwesomeIcon
-                className="social-media-icon"
-                icon={faFacebook}
-              />
+              <BsFacebook className={styles.social_media_icon} />
             </a>
-            <a
-              href="https://www.instagram.com/dietrich_landcarellc/"
+            <a href="https://www.instagram.com/dietrich_landcarellc/"
               target="_blank"
               rel="noreferrer"
             >
-              <FontAwesomeIcon
-                className="social-media-icon"
-                icon={faInstagram}
-              />
+              <AiFillInstagram className={styles.social_media_icon} />
             </a>
           </div>
 
           <div
-            className="hamburger-menu"
+            className={styles.hamburger_menu}
             onClick={() => this.setState({ toggleMobileMenu: true })}
           >
             <GiHamburgerMenu />
