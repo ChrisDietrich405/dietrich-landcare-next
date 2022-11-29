@@ -61,7 +61,7 @@ export default class Navbar extends React.Component {
 
           <div className={styles.logo_links}>
             <a href="/">
-              <Image src="/images/logo.jpg" width="100px" height="100px" alt="logo" />
+              <Image src="/images/logo.jpg" width="50px" height="50px" className={styles.nav_logo} alt="logo" />
             </a>
             <ul className={styles.responsive_links}>
               <li className={styles.nav_item}>
@@ -71,7 +71,7 @@ export default class Navbar extends React.Component {
               </li>
 
               <li
-                className={styles.services}
+                className={styles.nav_item}
                 onClick={this.toggleShowServiceMenu}
               >
                 <OutsideAlerter
@@ -108,7 +108,7 @@ export default class Navbar extends React.Component {
                   Testimonials
                 </a>
               </li>
-              <li>
+              <li className={styles.nav_item}>
                 <a href="/contact" className={styles.nav_link}>
                   Contact
                 </a>
