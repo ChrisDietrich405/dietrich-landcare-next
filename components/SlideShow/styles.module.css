@@ -1,6 +1,6 @@
-@import "./Variables.scss";
 
-.slide-show-container {
+
+.slide_show_container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,7 +16,7 @@
   margin-bottom: 20px;
 }
 
-.slide-show {
+.slide_show {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,64 +28,64 @@
   object-fit: fill;
   background-size: cover;
   transition: background-image 2s ease-out;
+}
 
-  h3 {
-    color: #fff;
-    font-size: 45px;
-    font-weight: bold;
-    margin-bottom: 50px;
-  }
+.slideshow_h3 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
 
-  .gradient {
-    z-index: 112;
-  }
+.gradient {
+  z-index: 112;
+}
 
-  .arrow-left-container {
-    z-index: 112;
-    position: absolute;
-    top: 41%;
-    left: 4%;
-    background-color: #fff;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-  }
+.arrow_left_container {
+  z-index: 112;
+  position: absolute;
+  top: 41%;
+  left: 4%;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
 
-  .arrow-right-container {
-    z-index: 112;
-    position: absolute;
-    top: 41%;
-    right: 4%;
-    background-color: #fff;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-  }
+.arrow_right_container {
+  z-index: 112;
+  position: absolute;
+  top: 41%;
+  right: 4%;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
 
-  .arrow-left,
-  .arrow-right {
-    margin-top: 11px;
-    font-size: 27px;
-    color: $primary-color;
-  }
+.arrow_left,
+.arrow_right {
+  margin-top: 11px;
+  font-size: 27px;
+  color: #448c7e;
 }
 
 @media (max-width: 1043px) {
-  .slide-show {
+  .slide_show {
     position: relative;
   }
 
-  .slide-show h3 {
+  .slide_show h3 {
     font-size: 1.5rem;
   }
 
-  .arrow-left-container {
+  .arrow_left_container {
     position: absolute !important;
     top: 37% !important;
     left: 4% !important;
   }
 
-  .arrow-right-container {
+  .arrow_right_container {
     position: absolute;
     top: 37% !important;
     right: 4% !important;
@@ -93,13 +93,13 @@
 }
 
 @media (max-width: 600px) {
-  .arrow-left-container {
+  .arrow_left_container {
     position: absolute !important;
     top: 25% !important;
     left: 4% !important;
   }
 
-  .arrow-right-container {
+  .arrow_right_container {
     position: absolute;
     top: 25% !important;
     right: 4% !important;

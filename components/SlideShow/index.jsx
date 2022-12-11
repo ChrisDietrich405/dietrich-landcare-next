@@ -1,7 +1,9 @@
 import React from "react";
 
-import { AiOutlineArrowLeft } from "react-icons/all";
-import { AiOutlineArrowRight } from "react-icons/all";
+import { AiOutlineArrowLeft } from "react-icons/ai";
+import { AiOutlineArrowRight } from "react-icons/ai";
+
+import styles from "./styles.module.css"
 
 export default class SlideShow extends React.Component {
   constructor(props) {
@@ -34,25 +36,25 @@ export default class SlideShow extends React.Component {
     };
 
     return (
-      <div className="slide-show-container">
-        <div className="darken" />
+      <div className={styles.slide_show_container}>
+        <div className={styles.darken} />
         <div
-          className="slide-show"
+          className={styles.slide_show}
           style={{ backgroundImage: `url(${this.state.select.url})` }}
         >
-          <div className="arrow-left-container">
+          <div className={styles.arrow_left_container} >
             <AiOutlineArrowLeft
-              className="arrow-left"
+              className={styles.arrow_left}
               onClick={prevSlideShow}
             />
           </div>
-          <div className="gradient">
-            <h3>{this.state.select.title}</h3>
+          <div className={styles.gradient}>
+            <h3 className={styles.slideshow_h3}>{this.state.select.title}</h3>
           </div>
 
-          <div className="arrow-right-container">
+          <div className={styles.arrow_right_container}>
             <AiOutlineArrowRight
-              className="arrow-right"
+              className={styles.arrow_right}
               onClick={nextSlideShow}
             />
           </div>

@@ -44,10 +44,10 @@ export default class Navbar extends React.Component {
     this.setState({ showServiceMenu: !this.state.showServiceMenu });
   }
 
-//   async componentDidMount() {
-//     const { data } = await axios.get("http://localhost:3001/api/getServices");
-//     this.setState({ ...this.state, services: data.services });
-//   }
+  //   async componentDidMount() {
+  //     const { data } = await axios.get("http://localhost:3001/api/getServices");
+  //     this.setState({ ...this.state, services: data.services });
+  //   }
 
   render() {
     return (
@@ -61,7 +61,13 @@ export default class Navbar extends React.Component {
 
           <div className={styles.logo_links}>
             <a href="/">
-              <Image src="/images/logo.jpg" width="50px" height="50px" className={styles.nav_logo} alt="logo" />
+              <Image
+                src="/images/logo.jpg"
+                width="50px"
+                height="50px"
+                className={styles.nav_logo}
+                alt="logo"
+              />
             </a>
             <ul className={styles.responsive_links}>
               <li className={styles.nav_item}>
@@ -77,7 +83,84 @@ export default class Navbar extends React.Component {
                 <OutsideAlerter
                   clickOutside={() => this.setState({ showServiceMenu: false })}
                 >
-                  Services
+                  <div className="dropdown">
+                    <button
+                      className="btn btn-secondary dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Dropdown button
+                    </button>
+                    <ul
+                      className="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Action
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Another action
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Something else here
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  {/* <div className="dropdown">
+                    <button
+                      className="btn btn-secondary dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Services
+                    </button>
+                    <ul
+                      className="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Lawn Care
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Power Washing
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Snow Removal
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Stump Removal
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Demolition and Hauling
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Regrades
+                        </a>
+                      </li>
+                    </ul>
+                  </div> */}
+                  {/* Services
                   {this.state.showServiceMenu ? (
                     <div className={styles.services_menu}>
                       <ul className={styles.services_list}>
@@ -99,14 +182,14 @@ export default class Navbar extends React.Component {
                     </div>
                   ) : (
                     ""
-                  )}
+                  )} */}
                 </OutsideAlerter>
               </li>
 
               <li className={styles.nav_item}>
-                <a href="/testimonials" className={styles.nav_link}>
+                <Link href="/testimonials" className={styles.nav_link}>
                   Testimonials
-                </a>
+                </Link>
               </li>
               <li className={styles.nav_item}>
                 <a href="/contact" className={styles.nav_link}>
@@ -117,13 +200,15 @@ export default class Navbar extends React.Component {
           </div>
 
           <div className={styles.social_icons_container}>
-            <a href="https://www.facebook.com/Dietrich-Land-Care-LLC-571934750168436"
+            <a
+              href="https://www.facebook.com/Dietrich-Land-Care-LLC-571934750168436"
               target="_blank"
               rel="noreferrer"
             >
               <BsFacebook className={styles.social_media_icon} />
             </a>
-            <a href="https://www.instagram.com/dietrich_landcarellc/"
+            <a
+              href="https://www.instagram.com/dietrich_landcarellc/"
               target="_blank"
               rel="noreferrer"
             >
