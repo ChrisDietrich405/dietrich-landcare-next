@@ -38,10 +38,10 @@ export default class HomePage extends React.Component {
             <div className={styles.home_page_image}>
               <Image
                 src="/images/regrades.jpg"
-                width="30px"
-                height="30px"
+                width="430px"
+                height="230px"
                 alt=""
-                className="bottom-pic"
+                className={styles.title_pic}
               />
             </div>
             <div className={styles.home_page_description}>

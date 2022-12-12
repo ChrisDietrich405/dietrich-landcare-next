@@ -12,11 +12,11 @@ export default class Footer extends React.Component {
       return timeNow;
     }
     return (
-      <div className="footer">
-        <div className="footer-container">
-          <div className="footer-container-top">
-            <div className="footer-tablet-container">
-              <div className="footer-container-top-title">
+      <div className={styles.footer}>
+        <div className={styles.footer_container}>
+          <div className={styles.footer_container_top}>
+            <div className={styles.footer_tablet_container}>
+              <div className={styles.footer_container_top_title}>
                 <h3>Contact Us</h3>
                 <p>
                   <span>
@@ -31,19 +31,19 @@ export default class Footer extends React.Component {
                   &nbsp;office@dietrichlandcare.com
                 </p>
               </div>
-              <div className="footer-container-top-title">
+              <div className={styles.footer_container_top_title}>
                 <h3>Serving</h3>
                 <p>Towson, Lutherville and Timonium</p>
               </div>
             </div>
-            <div className="footer-tablet-container">
-              <div className="footer-container-top-title">
+            <div className={styles.footer_tablet_container}>
+              <div className={styles.footer_container_top_title}>
                 <h3>Office Hours</h3>
                 <p>Monday-Friday 7am-7:30pm</p>
                 <p>Saturday 9am-3:30pm</p>
                 <p>Sunday 9am-3:30pm</p>
               </div>
-              <div className="footer-container-top-title">
+              <div className={styles.footer_container_top_title}>
                 <h3>Follow Us</h3>
                 <p>
                   <a href="https://www.facebook.com/Dietrich-Land-Care-LLC-571934750168436">
@@ -64,8 +64,8 @@ export default class Footer extends React.Component {
               </div>
             </div>
           </div>
-          <div className="footer-container-bottom">
-            <div className="footer-copyright">
+          <div className={styles.footer_container_bottom}>
+            <div className={styles.footer_copyright}>
               <h4>DietrichLandCare©{currentTime()}</h4>
             </div>
           </div>

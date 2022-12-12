@@ -8,9 +8,9 @@ import { ImQuotesLeft } from "react-icons/im";
 export default class Testimonials extends React.Component {
   render() {
     return (
-      <div className="testimonial">
+      <div className={styles.testimonial}>
         <h1 className={styles.title}>Testimonials</h1>
-        <div className="testimonial-container">
+        <div className={styles.testimonial_container}>
           <div className="row">
             <div className="col-12 col-lg-6 text-center testimonial-pic">
               {" "}
@@ -23,7 +23,7 @@ export default class Testimonials extends React.Component {
               />
             </div>
             <div className="col-12 col-lg-6 text-center testimonial-container-client">
-              <div className="testimonial-person">
+              <div className={styles.testimonial_person}>
                 <Image
                   borderRadius="10px"
                   width="100px"
@@ -48,10 +48,10 @@ export default class Testimonials extends React.Component {
             </div>
           </div>
         </div>
-        <div className="testimonial-container">
+        <div className={styles.testimonial_container}>
           <div className="row">
             <div className="order-lg-0 order-1 col-12 col-lg-6 text-center testimonial-container-client">
-              <div className="testimonial-person">
+              <div className={styles.testimonial_person}>
                 <Image
                   borderRadius="10px"
                   width="100px"
@@ -84,7 +84,7 @@ export default class Testimonials extends React.Component {
             </div>
           </div>
         </div>
-        <div className="testimonial-container">
+        <div className={styles.testimonial_container}>
           <div className="row">
             <div className="col-12 col-lg-6 text-center testimonial-pic ">
               <Image
@@ -96,7 +96,7 @@ export default class Testimonials extends React.Component {
               />
             </div>
             <div className="col-12 col-lg-6 text-center testimonial-container-client">
-              <div className="testimonial-person">
+              <div className={styles.testimonial_person}>
                 <Image
                   borderRadius="10px"
                   width="100px"
