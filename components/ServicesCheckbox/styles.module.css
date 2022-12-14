@@ -1,0 +1,100 @@
+.checkbox-container {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 1rem;
+}
+
+.service-container {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.services_container {
+  padding: 4px 0;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-label {
+  font-size: 1rem;
+}
+
+.service_name {
+  margin-left: 4px;
+}
+
+.contact-radio-btn p {
+  font-size: 1.4rem;
+  font-weight: 1500;
+}
+
+.radio-button-paragraph {
+  font-size: 0.4rem;
+  padding: 0 0.5rem;
+}
+
+.contact-radio-button input {
+  margin-left: 8rem;
+}
+
+.contact-label {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.contact-label span {
+  padding-top: 5px;
+}
+
+.checkbox-background-color {
+  position: relative;
+}
+
+.checkbox-background-color::before {
+  border: solid 1px black;
+  border-radius: 4px;
+  padding-left: 2px;
+  background: white;
+  position: absolute;
+  top: -2px;
+  left: -8px;
+  display: block;
+  width: 17px;
+  height: 17px;
+  content: "";
+  box-sizing: unset;
+}
+
+.checkbox-background-color:checked::before {
+  background-color: white;
+  color: #448c7e;
+  content: "\f00c";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .service-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .service-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-left: 12px;
+  }
+}
