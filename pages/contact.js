@@ -36,34 +36,33 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-      <div className="contact-viewport">
-        <div className="contact-header">
-          <h1 className="contact-title">Let's get in touch!</h1>
-          <hr className="contact-line" />
+      <div className={styles.contact_viewport}>
+        <div className={styles.contact_header}>
+          <h1 className={styles.contact_title}>Let's get in touch!</h1>
           <p>
             Call or Text Us: Monday-Saturday 7am-7:30 pm. Saturday: 9am-3:30pm
           </p>
         </div>
 
-        <ul className="contact-info">
-          <li className="contact-information">
-            <span className="icon-phone contact-info-icons"></span>
+        <ul className={styles.contact_info}>
+          <li className={styles.contact_information}>
+            <span className={styles.contact_info_icons}></span>
             <p>(443) 608-3258</p>
           </li>
-          <li className="contact-information">
-            <span className="icon-mail3 contact-info-icons"></span>
+          <li className={styles.contact_information}>
+            <span className={styles.contact_info_icons}></span>
 
             <p>office@dietrichlandcare.com</p>
           </li>
-          <li className="contact-information">
-            <span className="icon-location2 contact-info-icons"></span>
+          <li className={styles.contact_information}>
+            <span className={styles.contact_info_icons}></span>
 
             <p>Towson, MD 21239</p>
           </li>
         </ul>
 
-        <div className="contact-social-media">
-          <div className="contact-facebook">
+        <div className={styles.contact_social_media}>
+          <div className={styles.contact_facebook}>
             <a
               href="https://www.facebook.com/Dietrich-Land-Care-LLC-571934750168436"
               rel="noreferrer"
@@ -72,7 +71,7 @@ export default class Contact extends React.Component {
               <BsFacebook />
             </a>
           </div>
-          <div className="contact-instagram">
+          <div className={styles.contact_instagram}>
             <a
               href="https://www.instagram.com/dietrich_landcarellc/"
               rel="noreferrer"
@@ -83,7 +82,7 @@ export default class Contact extends React.Component {
           </div>
         </div>
 
-        <div className="contact-services">
+        <div className={styles.contact_services}>
           <ServicesCheckbox
             isSubmitting={this.state.isSubmitting}
             change={(targetValue) => {
@@ -91,7 +90,7 @@ export default class Contact extends React.Component {
             }}
           />
 
-          <div className="contact-form">
+          <div className={styles.contact_form}>
             {"service" in this.state.error && (
               <p className="error-message">
                 {this.state.error.service.join(",")}
@@ -99,11 +98,11 @@ export default class Contact extends React.Component {
             )}
           </div>
           <form
-            className="contact-form-container"
+            className={styles.contact_form_container}
             onSubmit={this.onSubmit.bind(this)}
           >
-            <div className="contact-form-inputs">
-              <div className="contact-form-section">
+            <div className={styles.contact_form_inputs}>
+              <div className={styles.contact_form_section}>
                 <div
                   className={classnames("contact-fields", {
                     filled: this.state.firstName !== "",
@@ -112,7 +111,7 @@ export default class Contact extends React.Component {
                   <label className={styles.label_name} htmlFor="firstName">
                     First Name
                   </label>
-                  <div className="input-container">
+                  <div className={styles.input_container}>
                     <input
                       className={styles.input_name}
                       id="firstName"
@@ -123,7 +122,7 @@ export default class Contact extends React.Component {
                       }}
                     />{" "}
                     {"firstName" in this.state.error && (
-                      <p className="error-message">
+                      <p className={styles.error_message}>
                         {this.state.error.firstName.join(",")}
                       </p>
                     )}
@@ -138,7 +137,7 @@ export default class Contact extends React.Component {
                   <label className={styles.label_name} htmlFor="lastName">
                     Last Name
                   </label>
-                  <div className="input-container">
+                  <div className={styles.input_container}>
                     <input
                       className={styles.input_name}
                       id="lastName"
@@ -148,7 +147,7 @@ export default class Contact extends React.Component {
                       }}
                     />{" "}
                     {"lastName" in this.state.error && (
-                      <p className="error-message">
+                      <p className={styles.error_message}>
                         {this.state.error.lastName.join(",")}
                       </p>
                     )}
@@ -163,7 +162,7 @@ export default class Contact extends React.Component {
                   <label className={styles.label_name} htmlFor="Email">
                     Email
                   </label>
-                  <div className="input-container">
+                  <div className={styles.input_container}>
                     <input
                       className={styles.input_name}
                       id="Email"
@@ -173,7 +172,7 @@ export default class Contact extends React.Component {
                       }}
                     />{" "}
                     {"email" in this.state.error && (
-                      <p className="error-message">
+                      <p className={styles.error_message}>
                         {this.state.error.email.join(",")}
                       </p>
                     )}
@@ -189,7 +188,7 @@ export default class Contact extends React.Component {
                   <label className={styles.label_name} htmlFor="Phone">
                     Phone
                   </label>
-                  <div className="input-container">
+                  <div className={styles.input_container}>
                     <input
                       className={styles.input_name}
                       id="Phone"
@@ -199,14 +198,14 @@ export default class Contact extends React.Component {
                       }}
                     />
                     {"phone" in this.state.error && (
-                      <p className="error-message">
+                      <p className={styles.error_message}>
                         {this.state.error.phone.join(",")}
                       </p>
                     )}
                   </div>
                 </div>
               </div>
-              <div className="contact-form-section">
+              <div className={styles.contact_form_section}>
                 <div
                   className={classnames("message-text", "contact-fields", {
                     filled: this.state.message !== "",
@@ -215,7 +214,7 @@ export default class Contact extends React.Component {
                   <label className={styles.label_name} htmlFor="Message">
                     Message
                   </label>
-                  <div className="input-container">
+                  <div className={styles.input_container}>
                     <textarea
                       className={styles.textarea_name}
                       id="textarea-responsive"
@@ -225,7 +224,7 @@ export default class Contact extends React.Component {
                       }}
                     ></textarea>
                     {"message" in this.state.error && (
-                      <p className="error-message">
+                      <p className={styles.error_message}>
                         {this.state.error.message.join(",")}
                       </p>
                     )}
@@ -235,7 +234,7 @@ export default class Contact extends React.Component {
             </div>
             <button
               disabled={this.state.isSubmitting}
-              className="contact-submit-btn"
+              className={styles.contact_submit_btn}
             >
               {this.state.isSubmitting ? "Submitting..." : "Submit"}
             </button>
