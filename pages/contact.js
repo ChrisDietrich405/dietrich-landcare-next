@@ -3,6 +3,11 @@ import axios from "axios";
 
 import { BsFacebook } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
+import { AiFillPhone } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
+import { ImLocation2 } from "react-icons/im";
+
+
 import classnames from "classnames";
 import * as Validator from "validatorjs";
 import emailjs from "@emailjs/browser";
@@ -46,16 +51,16 @@ export default class Contact extends React.Component {
 
         <ul className={styles.contact_info}>
           <li className={styles.contact_information}>
-            <span className={styles.contact_info_icons}></span>
+            <span className={styles.contact_info_icons}><AiFillPhone/></span>
             <p>(443) 608-3258</p>
           </li>
           <li className={styles.contact_information}>
-            <span className={styles.contact_info_icons}></span>
+            <span className={styles.contact_info_icons}><MdEmail/></span>
 
             <p>office@dietrichlandcare.com</p>
           </li>
           <li className={styles.contact_information}>
-            <span className={styles.contact_info_icons}></span>
+            <span className={styles.contact_info_icons}><ImLocation2/></span>
 
             <p>Towson, MD 21239</p>
           </li>

@@ -13,6 +13,12 @@ import OutsideAlerter from "../OutsideAlerter";
 
 import styles from "./styles.module.css";
 
+const services = [
+  { title: "Lawn Care", permalink: "lawn-care" },
+  { title: "Power Washing", permalink: "power-washing" },
+  { title: "Snow Removal", permalink: "snow-removal" },
+  { title: "Stump Removal", permalink: "stump-removal" },
+];
 export default class Navbar extends React.Component {
   constructor(props) {
     super(props);
@@ -20,7 +26,7 @@ export default class Navbar extends React.Component {
       showServiceMenu: false,
       toggleMobileMenu: false,
       showModal: true,
-      services: [],
+      // services: [],
     };
     this.toggleShowServiceMenu = this.toggleShowServiceMenu.bind(this);
     this.setToggleMobileMenu = this.setToggleMobileMenu.bind(this);
@@ -44,10 +50,10 @@ export default class Navbar extends React.Component {
     this.setState({ showServiceMenu: !this.state.showServiceMenu });
   }
 
-  //   async componentDidMount() {
-  //     const { data } = await axios.get("http://localhost:3001/api/getServices");
-  //     this.setState({ ...this.state, services: data.services });
-  //   }
+  // async componentDidMount() {
+  //   const { data } = await axios.get("http://localhost:3001/api/getServices");
+  //   this.setState({ ...this.state, services: data.services });
+  // }
 
   render() {
     return (
@@ -83,106 +89,29 @@ export default class Navbar extends React.Component {
                 <OutsideAlerter
                   clickOutside={() => this.setState({ showServiceMenu: false })}
                 >
-                  <div className="dropdown">
-                    <button
-                      className="btn btn-secondary dropdown-toggle"
-                      type="button"
-                      id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Dropdown button
-                    </button>
-                    <ul
-                      className="dropdown-menu"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Action
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Another action
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Something else here
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  {/* <div className="dropdown">
-                    <button
-                      className="btn btn-secondary dropdown-toggle"
-                      type="button"
-                      id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Services
-                    </button>
-                    <ul
-                      className="dropdown-menu"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Lawn Care
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Power Washing
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Snow Removal
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Stump Removal
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Demolition and Hauling
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Regrades
-                        </a>
-                      </li>
-                    </ul>
-                  </div> */}
-                  {/* Services
+                  Services
                   {this.state.showServiceMenu ? (
                     <div className={styles.services_menu}>
-                      <ul className={styles.services_list}>
-                        {this.state.services.map((service) => {
+                      <ul>
+                        {services.map((service) => {
                           return (
-                            <li
-                              className={styles.service_item}
-                              key={service.id}
-                            >
-                              <Link to={`/services#${service.permalink}`}
-                                className={styles.services_nav_link}
-                              >
-                                {service.name}
-                              </Link>
-                            </li>
+                            <>
+                              <li>
+                                <a
+                                  href={`/services#${service.permalink}`}
+                                  className={styles.services_nav_link}
+                                >
+                                  {service.title}
+                                </a>
+                              </li>
+                            </>
                           );
                         })}
                       </ul>
                     </div>
                   ) : (
                     ""
-                  )} */}
+                  )}
                 </OutsideAlerter>
               </li>
 

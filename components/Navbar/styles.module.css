@@ -68,7 +68,7 @@
 
 .nav_item {
   list-style: none;
-  color: #fff !important; 
+  color: #fff !important;
 }
 
 .nav_item a {
@@ -78,10 +78,11 @@
 
 .services_menu {
   position: absolute;
-  left: 0;
-  top: 30px;
+  left: 270px; 
+  top: 90px;
   z-index: 10000;
 }
+
 .services_menu ul {
   background-color: #448c7e;
   width: 200px;
@@ -92,6 +93,8 @@
 }
 
 .services_menu li {
+  position: relative;
+  list-style: none;
   padding-left: 15px;
   color: #fff;
   transition: 0.3s;

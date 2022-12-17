@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Services.scss";
+import styles from "../styles/services.module.css";
 
 export default class Services extends React.Component {
   render() {
@@ -9,9 +9,9 @@ export default class Services extends React.Component {
           <h1>Services</h1>
           <hr />
           <div className="services-description" id="lawn-care">
-            <div className="image"></div>
             <div className="services-image-description">
               <h3>Lawn Care</h3>
+              <img src="" className={styles.image} alt="" />
               <p>
                 Dietrich Land Care can make your lawn the envy of your
                 neighborhood. Our Service Leaders and in-house agronomists (soil
@@ -31,11 +31,12 @@ export default class Services extends React.Component {
                 know the "Ins and Outs" of the industry.
               </p>
             </div>
-            <div className="image"></div>
+            <img src="" className={styles.image} alt="" />
           </div>
           <div className="services-description" id="snow-removal">
             <div className="image"></div>
             <div className="services-image-description">
+              <img src="" className={styles.image} alt="" />
               <h3>Snow Removal</h3>
               <p>
                 If you are stuck in your property and you have hard access
@@ -57,36 +58,7 @@ export default class Services extends React.Component {
                 and customer care.
               </p>
             </div>
-            <div className="image"></div>
-          </div>
-          <div className="services-description" id="demolition">
-            <div className="image"></div>
-            <div className="services-image-description">
-              <h3>Demolition & Hauling</h3>
-              <p>
-                Our trained professionals provide cleanout and trash-removal
-                services for residential and commercial properties, as well as
-                construction and renovation sites. We value prompt, professional
-                and courteous service and take the time to inspect every job and
-                location individually. Many of our reviews contain comments on
-                how our customers appreciated our being on time.
-              </p>
-            </div>
-          </div>
-          <div className="services-description" id="regrades">
-            <div className="services-image-description">
-              <h3>Regrades</h3>
-              <p>
-                Most clients we visit can benefit from some form of grading to
-                further get water away from their houses. Negative grading
-                creates hydrostatic pressure on walls by constantly forcing
-                water to flow towards the house. With high-density clay fill, we
-                change the grade around your entire house to create a holistic
-                system that deters water from coming near the vulnerable points
-                around the house and property.
-              </p>
-            </div>
-            <div className="image"></div>
+            <img src="" className={styles.image} alt="" />
           </div>
         </div>
       </div>
