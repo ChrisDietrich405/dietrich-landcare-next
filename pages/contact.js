@@ -73,7 +73,7 @@ export default class Contact extends React.Component {
               rel="noreferrer"
               target="_blank"
             >
-              <BsFacebook />
+              <BsFacebook style={{color: "#448c7e"}} size={40}/>
             </a>
           </div>
           <div className={styles.contact_instagram}>
@@ -82,7 +82,7 @@ export default class Contact extends React.Component {
               rel="noreferrer"
               target="_blank"
             >
-              <AiFillInstagram size={40} />
+              <AiFillInstagram style={{color: "#448c7e"}}  size={45} />
             </a>
           </div>
         </div>

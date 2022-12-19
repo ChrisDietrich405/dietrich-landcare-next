@@ -16,8 +16,8 @@ export default class Testimonials extends React.Component {
               {" "}
               <Image
                 borderRadius="10px"
-                width="100px"
-                height="100px"
+                width="350px"
+                height="350px"
                 src="/images/testimonial-landscape1.jpg"
                 alt="beautiful and clean garden"
               />
@@ -56,7 +56,7 @@ export default class Testimonials extends React.Component {
                   borderRadius="10px"
                   width="100px"
                   height="100px"
-                  src="/images/testimonial-person2.jpeg"
+                  src="/images/testimonial-person1.jpeg"
                   alt="woman profile"
                 />
                 <span>&nbsp;Alicia Jones, Towson</span>
@@ -76,8 +76,8 @@ export default class Testimonials extends React.Component {
             <div className="order-lg-1 order-0 col-12 col-lg-6 text-center testimonial-pic ">
               <Image
                 borderRadius="10px"
-                width="100px"
-                height="100px"
+                width="350px"
+                height="350px"
                 src="/images/testimonial-landscape2.jpg"
                 alt="testimonial landscape"
               />
@@ -89,8 +89,8 @@ export default class Testimonials extends React.Component {
             <div className="col-12 col-lg-6 text-center testimonial-pic ">
               <Image
                 borderRadius="10px"
-                width="100px"
-                height="100px"
+                width="350px"
+                height="350px"
                 src="/images/testimonial-landscape3.jpg"
                 alt=""
               />

@@ -7,6 +7,7 @@
 
 .quote {
   text-align: left;
+  margin-top: 40px;
 }
 
 .testimonial_container {
@@ -46,6 +47,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.testimonial_person span {
+  margin-left: 10px;
 }
 
 @media (max-width: 1043px) {

@@ -1,27 +1,38 @@
 import React from "react";
+import Image from "next/image";
 import styles from "../styles/services.module.css";
 
 export default class Services extends React.Component {
   render() {
     return (
-      <div className="services-main-container">
-        <div className="services-container">
+      <div className={styles.services_main_container}>
+        <div className={styles.services_container}>
           <h1>Services</h1>
           <hr />
-          <div className="services-description" id="lawn-care">
-            <div className="services-image-description">
-              <h3>Lawn Care</h3>
-              <img src="" className={styles.image} alt="" />
-              <p>
-                Dietrich Land Care can make your lawn the envy of your
-                neighborhood. Our Service Leaders and in-house agronomists (soil
-                scientists) provide customized programs that eliminate weeds
-                while bringing you a green, vibrant and healthy lawn.
-              </p>
+          <div className={styles.services_description} id="lawn_care">
+            <div className={styles.snow_removal}>
+              <div>
+                <Image
+                  height={370}
+                  width={370}
+                  src="/images/snow-removal.png"
+                  className={styles.image}
+                  alt="snow-removal"
+                />
+              </div>
+              <div>
+                <h3>Lawn Care</h3>
+                <p>
+                  Dietrich Land Care can make your lawn the envy of your
+                  neighborhood. Our Service Leaders and in-house agronomists
+                  (soil scientists) provide customized programs that eliminate
+                  weeds while bringing you a green, vibrant and healthy lawn.
+                </p>
+              </div>
             </div>
           </div>
-          <div className="services-description" id="power-washing">
-            <div className="services-image-description">
+          <div className={styles.services_description} id="power-washing">
+            <div className={styles.services_image_description}>
               <h3>Power Washing</h3>
               <p>
                 We are one of the leading exterior cleaning service providers
@@ -31,12 +42,23 @@ export default class Services extends React.Component {
                 know the "Ins and Outs" of the industry.
               </p>
             </div>
-            <img src="" className={styles.image} alt="" />
+            <Image
+              height={370}
+              width={370}
+              src="/images/snow-removal.png"
+              className={styles.image}
+              alt="snow-removal"
+            />
           </div>
-          <div className="services-description" id="snow-removal">
-            <div className="image"></div>
-            <div className="services-image-description">
-              <img src="" className={styles.image} alt="" />
+          <div className={styles.services_description} id="snow-removal">
+            <div className={styles.services_image_description}>
+              <Image
+                height={370}
+                width={370}
+                src="/images/snow-removal.png"
+                className={styles.image}
+                alt="snow-removal"
+              />
               <h3>Snow Removal</h3>
               <p>
                 If you are stuck in your property and you have hard access
@@ -47,8 +69,8 @@ export default class Services extends React.Component {
               </p>
             </div>
           </div>
-          <div className="services-description" id="stump-removal">
-            <div className="services-image-description">
+          <div className={styles.services_description} id="stump-removal">
+            <div className={styles.services_image_description}>
               <h3>Stump Removal</h3>
               <p>
                 We provide the best stump removal service in the Baltimore area.
@@ -58,7 +80,13 @@ export default class Services extends React.Component {
                 and customer care.
               </p>
             </div>
-            <img src="" className={styles.image} alt="" />
+            <Image
+              height={370}
+              width={370}
+              src="/images/snow-removal.png"
+              className={styles.image}
+              alt="snow-removal"
+            />
           </div>
         </div>
       </div>
