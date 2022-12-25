@@ -1,26 +1,41 @@
 import React, { Component } from "react";
+import styles from "./styles.module.css";
 
-const ServicesCheckbox = () => {
-
+const ServicesCheckbox = ({isSubmitting, change}) => {
+  
   const func = (e) => {
-    e.preventDefault()
-    console.log(e)
-  }
+    e.preventDefault();
+    console.log(e);
+  };
 
   return (
-    <>
-      <form onSubmit={func}>
-        <input name="lawn-care" type="checkbox" />
-        <label htmlFor="">Lawn Care</label>
-        <input name="power-washing" type="checkbox" />
-        <label htmlFor="">Power Washing</label>
-        <input name="stump-removal" type="checkbox" />
-        <label htmlFor="">Stump Removal</label>
-        <input name="snow-removal" type="checkbox" />
-        <label htmlFor="">Snow Removal</label>
-        <button type="submit">submit</button>
+    <div>
+      <h3 className={styles.checkbox_title}>
+        What services are you interested in?
+      </h3>
+      <form className={styles.checkbox_container} onSubmit={func}>
+        <div>
+          <div>
+            <input name="lawn-care" type="checkbox" id="lawn-care" />
+            <label htmlFor="lawn-care">Lawn Care</label>
+          </div>
+          <div>
+            <input name="power-washing" type="checkbox" id="power-washing"/>
+            <label htmlFor="power-washing">Power Washing</label>
+          </div>
+        </div>
+        <div>
+          <div>
+            <input name="stump-removal" type="checkbox" id="stump-removal" />
+            <label htmlFor="stump-removal">Stump Removal</label>
+          </div>
+          <div>
+            <input name="snow-removal" type="checkbox" id="snow-removal"/>
+            <label htmlFor="snow-removal">Snow Removal</label>
+          </div>
+        </div>
       </form>
-    </>
+    </div>
   );
 };
 

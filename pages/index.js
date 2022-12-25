@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import SlideShow from "../components/SlideShow";
+import Head from "next/head";
 
 import styles from "../styles/home.module.css";
 
@@ -8,6 +9,40 @@ export default class HomePage extends React.Component {
   render() {
     return (
       <>
+        <Head>
+          <title>Dietrich LandCare</title>
+          <meta
+            name="description"
+            content="Dietrich Land Care is a landscaping company specializing in "
+          />
+
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://example.com" />
+          <meta property="og:title" content="Maryland Vegan" />
+          <meta
+            property="og:description"
+            content="Dietrich Land Care is a landscaping company specializing in "
+          />
+          <meta
+            property="og:image"
+            content="https://example.com/logo.png"
+          />
+
+          <link rel="icon" href="/favicon.ico" />
+          <link
+            rel="icon"
+            type="image/png"
+            href="/favicon-32x32.png"
+            sizes="32x32"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            href="/favicon-16x16.png"
+            sizes="16x16"
+          />
+        </Head>
+
         <div className="home-page-container">
           <SlideShow
             timeOut={3000}
@@ -79,5 +114,3 @@ export default class HomePage extends React.Component {
     );
   }
 }
-
-
