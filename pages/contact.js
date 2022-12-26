@@ -7,7 +7,6 @@ import { AiFillPhone } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 import { ImLocation2 } from "react-icons/im";
 
-
 import classnames from "classnames";
 import * as Validator from "validatorjs";
 import emailjs from "@emailjs/browser";
@@ -34,9 +33,17 @@ export default class Contact extends React.Component {
     };
   }
 
-  
   async componentDidMount() {
-    const services = {"services":[{"id":1,"name":"Lawn Care","permalink":"lawn-care"},{"id":2,"name":"Power Washing","permalink":"power-washing"},{"id":3,"name":"Snow Removal ","permalink":"snow-removal"},{"id":4,"name":"Stump Removal","permalink":"stump-removal"},{"id":5,"name":"Demo & Hauling","permalink":"demolition"},{"id":6,"name":"Regrades","permalink":"regrades"}]}
+    const services = {
+      services: [
+        { id: 1, name: "Lawn Care", permalink: "lawn-care" },
+        { id: 2, name: "Power Washing", permalink: "power-washing" },
+        { id: 3, name: "Snow Removal ", permalink: "snow-removal" },
+        { id: 4, name: "Stump Removal", permalink: "stump-removal" },
+        { id: 5, name: "Demo & Hauling", permalink: "demolition" },
+        { id: 6, name: "Regrades", permalink: "regrades" },
+      ],
+    };
     // const { data } = await axios.get("http://localhost:3001/api/getServices");
     this.setState({ ...this.state, services });
   }
@@ -53,16 +60,22 @@ export default class Contact extends React.Component {
 
         <ul className={styles.contact_info}>
           <li className={styles.contact_information}>
-            <span className={styles.contact_info_icons}><AiFillPhone/></span>
+            <span className={styles.contact_info_icons}>
+              <AiFillPhone />
+            </span>
             <p>(443) 608-3258</p>
           </li>
           <li className={styles.contact_information}>
-            <span className={styles.contact_info_icons}><MdEmail/></span>
+            <span className={styles.contact_info_icons}>
+              <MdEmail />
+            </span>
 
             <p>office@dietrichlandcare.com</p>
           </li>
           <li className={styles.contact_information}>
-            <span className={styles.contact_info_icons}><ImLocation2/></span>
+            <span className={styles.contact_info_icons}>
+              <ImLocation2 />
+            </span>
 
             <p>Towson, MD 21239</p>
           </li>
@@ -75,7 +88,7 @@ export default class Contact extends React.Component {
               rel="noreferrer"
               target="_blank"
             >
-              <BsFacebook style={{color: "#448c7e"}} size={40}/>
+              <BsFacebook style={{ color: "#448c7e" }} size={40} />
             </a>
           </div>
           <div className={styles.contact_instagram}>
@@ -84,7 +97,7 @@ export default class Contact extends React.Component {
               rel="noreferrer"
               target="_blank"
             >
-              <AiFillInstagram style={{color: "#448c7e"}}  size={45} />
+              <AiFillInstagram style={{ color: "#448c7e" }} size={45} />
             </a>
           </div>
         </div>
@@ -96,7 +109,6 @@ export default class Contact extends React.Component {
               this.setState({ service: targetValue });
             }}
           />
-          {JSON.stringify(this.state.service)}
 
           <div className={styles.contact_form}>
             {"service" in this.state.error && (

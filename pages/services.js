@@ -22,8 +22,8 @@ export default class Services extends React.Component {
               <div className={styles.snow_removal}>
                 <div>
                   <Image
-                    height={470}
-                    width={470}
+                    height={770}
+                    width={770}
                     src="/images/snow-removal.png"
                     className={styles.image}
                     alt="snow-removal"
@@ -59,23 +59,26 @@ export default class Services extends React.Component {
                 alt="snow-removal"
               />
             </div>
-            <div className={styles.services_description} id="snow-removal">
-              <div className={styles.services_image_description}>
-                <Image
-                  height={370}
-                  width={370}
-                  src="/images/snow-removal.png"
-                  className={styles.image}
-                  alt="snow-removal"
-                />
-                <h3>Snow Removal</h3>
-                <p>
-                  If you are stuck in your property and you have hard access
-                  outside, grab the phone and call us. You don’t want to risk
-                  being stuck for hours or going out at the expense of your
-                  safety. We’ll help you get rid of snow and keep your sidewalk
-                  clear.
-                </p>
+            <div className={styles.services_description} id="lawn_care">
+              <div className={styles.snow_removal}>
+                <div>
+                  <Image
+                    height={770}
+                    width={770}
+                    src="/images/snow-removal.png"
+                    className={styles.image}
+                    alt="snow-removal"
+                  />
+                </div>
+                <div>
+                  <h3>Lawn Care</h3>
+                  <p>
+                    Dietrich Land Care can make your lawn the envy of your
+                    neighborhood. Our Service Leaders and in-house agronomists
+                    (soil scientists) provide customized programs that eliminate
+                    weeds while bringing you a green, vibrant and healthy lawn.
+                  </p>
+                </div>
               </div>
             </div>
             <div className={styles.services_description} id="stump-removal">
