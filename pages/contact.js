@@ -33,20 +33,20 @@ export default class Contact extends React.Component {
     };
   }
 
-  async componentDidMount() {
-    const services = {
-      services: [
-        { id: 1, name: "Lawn Care", permalink: "lawn-care" },
-        { id: 2, name: "Power Washing", permalink: "power-washing" },
-        { id: 3, name: "Snow Removal ", permalink: "snow-removal" },
-        { id: 4, name: "Stump Removal", permalink: "stump-removal" },
-        { id: 5, name: "Demo & Hauling", permalink: "demolition" },
-        { id: 6, name: "Regrades", permalink: "regrades" },
-      ],
-    };
-    // const { data } = await axios.get("http://localhost:3001/api/getServices");
-    this.setState({ ...this.state, services });
-  }
+  // async componentDidMount() {
+  //   // const services = {
+  //   //   services: [
+  //   //     { id: 1, name: "Lawn Care", permalink: "lawn-care" },
+  //   //     { id: 2, name: "Power Washing", permalink: "power-washing" },
+  //   //     { id: 3, name: "Snow Removal ", permalink: "snow-removal" },
+  //   //     { id: 4, name: "Stump Removal", permalink: "stump-removal" },
+  //   //     { id: 5, name: "Demo & Hauling", permalink: "demolition" },
+  //   //     { id: 6, name: "Regrades", permalink: "regrades" },
+  //   //   ],
+  //   // };
+  //   // const { data } = await axios.get("http://localhost:3001/api/getServices");
+  //   // this.setState({ ...this.state, services });
+  // }
 
   render() {
     return (
@@ -109,7 +109,8 @@ export default class Contact extends React.Component {
               this.setState({ service: targetValue });
             }}
           />
-
+          
+          {JSON.stringify(this.state)}
           <div className={styles.contact_form}>
             {"service" in this.state.error && (
               <p className="error-message">
