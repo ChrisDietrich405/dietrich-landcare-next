@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import SlideShow from "../components/SlideShow";
 import Head from "next/head";
 
+import SlideShow from "../components/SlideShow";
 import styles from "../styles/home.module.css";
 
 export default class HomePage extends React.Component {
