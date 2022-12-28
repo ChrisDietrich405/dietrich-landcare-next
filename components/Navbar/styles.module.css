@@ -87,6 +87,7 @@
 
 .services_menu ul {
   background-color: #448c7e;
+  padding: 0 !important;
   width: 200px;
   display: flex;
   flex-direction: column;
@@ -104,7 +105,8 @@
 
 .services_menu li:hover {
   color: #448c7e !important;
-  background-color: #ebedf0;
+  background-color: #42746b;
+  /* background-color: #ebedf0; */
   width: 200px;
 }
 

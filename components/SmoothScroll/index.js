@@ -1,10 +1,10 @@
 import React from "react";
 
-import { AiOutlineArrowUp } from "react-icons/all";
+import { AiOutlineArrowUp } from "react-icons/ai";
 
 import styles from "./styles.module.css";
 
-export default class SmoothScroll extends React.Component {
+class SmoothScroll extends React.Component {
   constructor(props) {
     super(props);
     this.state = { shouldScrollToTop: false };
@@ -41,3 +41,5 @@ export default class SmoothScroll extends React.Component {
     );
   }
 }
+
+export default SmoothScroll

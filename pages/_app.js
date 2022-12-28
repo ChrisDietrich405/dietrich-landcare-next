@@ -6,7 +6,7 @@ import "../styles/global.css";
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
-      <Component {...pageProps} />;
+      <Component {...pageProps} onClick={() => alert("111")} />;
     </Layout>
   );
 }

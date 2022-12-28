@@ -7,6 +7,7 @@ export default class OutsideAlerter extends Component {
 
     this.setWrapperRef = this.setWrapperRef.bind(this);
     this.handleClickOutside = this.handleClickOutside.bind(this);
+    this.action = "";
   }
 
   componentDidMount() {
@@ -23,7 +24,7 @@ export default class OutsideAlerter extends Component {
 
   handleClickOutside(event) {
     if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
-      // alert('You clicked outside of me!');
+      // alert('You clicked outside of me!')
     }
   }
 

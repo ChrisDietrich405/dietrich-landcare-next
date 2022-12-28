@@ -65,8 +65,11 @@ export default class Navbar extends React.Component {
             />
           )}
 
-          <div className={styles.logo_links}>
-            <a href="/">
+          <div
+            className={styles.logo_links}
+            // onMouseOut={() => this.setState({ showServiceMenu: true })}
+          >
+            <Link href="/">
               <Image
                 src="/images/logo.jpg"
                 width="50px"
@@ -74,21 +77,19 @@ export default class Navbar extends React.Component {
                 className={styles.nav_logo}
                 alt="logo"
               />
-            </a>
+            </Link>
             <ul className={styles.responsive_links}>
               <li className={styles.nav_item}>
-                <a href="/" className={styles.nav_link}>
+                <Link href="/" className={styles.nav_link}>
                   Home
-                </a>
+                </Link>
               </li>
 
               <li
                 className={styles.nav_item}
                 onClick={this.toggleShowServiceMenu}
               >
-                <OutsideAlerter
-                  clickOutside={() => this.setState({ showServiceMenu: false })}
-                >
+                <OutsideAlerter clickOutside={() => this.state({ showServiceMenu: false })}>
                   Services
                   {this.state.showServiceMenu ? (
                     <div className={styles.services_menu}>
@@ -121,9 +122,9 @@ export default class Navbar extends React.Component {
                 </Link>
               </li>
               <li className={styles.nav_item}>
-                <a href="/contact" className={styles.nav_link}>
+                <Link href="/contact" className={styles.nav_link}>
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
