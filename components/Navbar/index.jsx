@@ -1,159 +1,66 @@
 import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import axios from "axios";
 
-import MenuMobile from "../MenuMobile";
+const Navbar = () => {
 
-import { GiHamburgerMenu } from "react-icons/gi";
-import { BsFacebook } from "react-icons/bs";
-import { AiFillInstagram } from "react-icons/ai";
+  const services = [
+    { title: "Lawn Care", permalink: "lawn-care" },
+    { title: "Power Washing", permalink: "power-washing" },
+    { title: "Snow Removal", permalink: "snow-removal" },
+    { title: "Stump Removal", permalink: "stump-removal" },
+  ];
 
-import OutsideAlerter from "../OutsideAlerter";
+  return (
+    <nav className="navbar navbar-expand-md">
+      <div className="container-fluid">
+        <a href="/" className="navbar-brand">
+          <img
+            src="/images/logo.jpg"
+            alt="Dietrich Landcare"
+          />
+        </a>
 
-import styles from "./styles.module.css";
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-const services = [
-  { title: "Lawn Care", permalink: "lawn-care" },
-  { title: "Power Washing", permalink: "power-washing" },
-  { title: "Snow Removal", permalink: "snow-removal" },
-  { title: "Stump Removal", permalink: "stump-removal" },
-];
-export default class Navbar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showServiceMenu: false,
-      toggleMobileMenu: false,
-      showModal: true,
-      // services: [],
-    };
-    this.toggleShowServiceMenu = this.toggleShowServiceMenu.bind(this);
-    this.setToggleMobileMenu = this.setToggleMobileMenu.bind(this);
-    this.openModal = this.openModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
-  }
-
-  openModal() {
-    this.setState({ showModal: true });
-  }
-
-  closeModal() {
-    this.setState({ showModal: false });
-  }
-
-  setToggleMobileMenu() {
-    this.setState({ toggleMobileMenu: !this.state.toggleMobileMenu });
-  }
-
-  toggleShowServiceMenu() {
-    this.setState({ showServiceMenu: !this.state.showServiceMenu });
-  }
-
-  // async componentDidMount() {
-  //   const { data } = await axios.get("http://localhost:3001/api/getServices");
-  //   this.setState({ ...this.state, services: data.services });
-  // }
-
-  render() {
-    return (
-      <>
-        <nav className={styles.nav_container}>
-          {this.state.toggleMobileMenu && (
-            <MenuMobile
-              whenUserClicksOnXIcon={() => this.setToggleMobileMenu()}
-            />
-          )}
-
-          <div
-            className={styles.logo_links}
-            // onMouseOut={() => this.setState({ showServiceMenu: true })}
-          >
-            <Link href="/">
-              <Image
-                src="/images/logo.jpg"
-                width="50px"
-                height="50px"
-                className={styles.nav_logo}
-                alt="logo"
-              />
-            </Link>
-            <ul className={styles.responsive_links}>
-              <li className={styles.nav_item}>
-                <Link href="/" className={styles.nav_link}>
-                  Home
-                </Link>
-              </li>
-
-              <li
-                className={styles.nav_item}
-                onClick={this.toggleShowServiceMenu}
-              >
-                <OutsideAlerter clickOutside={() => this.state({ showServiceMenu: false })}>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            {services && (
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Services
-                  {this.state.showServiceMenu ? (
-                    <div className={styles.services_menu}>
-                      <ul>
-                        {services.map((service) => {
-                          return (
-                            <>
-                              <li>
-                                <a
-                                  href={`/services#${service.permalink}`}
-                                  className={styles.services_nav_link}
-                                >
-                                  {service.title}
-                                </a>
-                              </li>
-                            </>
-                          );
-                        })}
-                      </ul>
-                    </div>
-                  ) : (
-                    ""
-                  )}
-                </OutsideAlerter>
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  {services.map((service, key) => {
+                    return (
+                      <li key={key}>
+                        <a
+                          className="dropdown-item"
+                          href={`/services#${service.permalink}`}
+                        >
+                          {service.title}
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ul>
               </li>
+            )}
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="/testimonials">Testimonials</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
 
-              <li className={styles.nav_item}>
-                <Link href="/testimonials" className={styles.nav_link}>
-                  Testimonials
-                </Link>
-              </li>
-              <li className={styles.nav_item}>
-                <Link href="/contact" className={styles.nav_link}>
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className={styles.social_icons_container}>
-            <a
-              href="https://www.facebook.com/Dietrich-Land-Care-LLC-571934750168436"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <BsFacebook className={styles.social_media_icon} />
-            </a>
-            <a
-              href="https://www.instagram.com/dietrich_landcarellc/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <AiFillInstagram className={styles.social_media_icon} />
-            </a>
-          </div>
-
-          <div
-            className={styles.hamburger_menu}
-            onClick={() => this.setState({ toggleMobileMenu: true })}
-          >
-            <GiHamburgerMenu />
-          </div>
-        </nav>
-      </>
-    );
-  }
 }
+
+export default Navbar;
