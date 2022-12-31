@@ -69,7 +69,7 @@
     border-radius: 1rem;
   }
   
-  @media (max-width: 1305px) {
+  @media (max-width: 1024px) {
     .home_page_bottom_section,
     .home_page_image,
     .home_page_description,
@@ -126,5 +126,13 @@
       top: 39% !important;
       right: 5% !important;
     }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .home_page_bottom_section {
+      padding: 0;
+      margin: 0; 
+    }
+
   }
   
