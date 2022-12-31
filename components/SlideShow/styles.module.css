@@ -95,13 +95,17 @@
 @media (max-width: 600px) {
   .arrow_left_container {
     position: absolute !important;
-    top: 25% !important;
+    top: 35% !important;
     left: 4% !important;
   }
 
   .arrow_right_container {
     position: absolute;
-    top: 25% !important;
+    top: 35% !important;
     right: 4% !important;
+  }
+
+  .slideshow_h3 {
+    margin: 0 !important; 
   }
 }
