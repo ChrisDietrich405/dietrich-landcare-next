@@ -23,8 +23,8 @@ const Navbar = () => {
           <a className="navbar-brand mr-4">
             <Image
               src="/images/logo.jpg"
-              width="50px"
-              height="50px"
+              width="80px"
+              height="80px"
               alt="logo"
             />
           </a>

@@ -1,0 +1,12 @@
+.social_media_icon {
+    font-size: 32px;
+    margin-right: 20px;
+    background-color: #448c7e;
+    color: #fff;
+    transition: .3s;
+}
+
+.social_media_icon:hover {
+    color: rgb(183, 180, 180);
+    
+}

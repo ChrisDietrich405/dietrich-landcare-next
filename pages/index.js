@@ -69,7 +69,7 @@ export default class HomePage extends React.Component {
 
         <div className={styles.home_page_bottom_container}>
           <section className={styles.home_page_bottom_section}>
-            <h1 className={styles.home_page_title}>Dietrich Landcare</h1>
+            <h1 className={styles.home_page_title}>Dietrich Land Care</h1>
             <div className={styles.home_page_image}>
               <Image
                 src="/images/regrades.jpg"

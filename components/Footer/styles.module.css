@@ -77,3 +77,23 @@
     text-align: center;
   }
 }
+
+@media only screen and (min-width: 480px) {
+  .footer_container {
+    padding-bottom: 2rem;
+  }
+
+  .footer_container_top {
+    flex-direction: row;
+  }
+
+  .footer_container_top_title {
+    padding: 20px;
+  }
+
+  .footer_copyright {
+    justify-content: center;
+    text-align: center;
+  }
+}
+

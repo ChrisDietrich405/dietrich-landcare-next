@@ -1,138 +1,146 @@
 
+
 .home_page_title {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .home_page_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .home_page_middle {
-    margin-bottom: 50px;
-    height: 6rem;
-    background-color: #fff;
-    color: white;
-    justify-content: center;
-    text-align: center;
-    padding-top: 24px;
-  }
-  
-  .home_page_bottom_container {
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  .home_page_bottom_section {
-    margin: 0 3rem;
-    display: grid;
-    grid-template-areas:
-      "home_page_image home_page_description"
-      "box3 box3";
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 0.1rem;
-    grid-row-gap: 2rem;
-  }
-  
-  .home_page_image {
-    width: 20rem;
-    grid-area: home-page-image;
-  }
-  
-  .paragraph {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-  
-  .home_page_description {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    margin-top: 10px;
-  }
-  
-  .home_page_description p {
-    margin: 20px;
-  }
-  
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home_page_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_page_middle {
+  margin-bottom: 50px;
+  height: 6rem;
+  background-color: #448c7e;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  padding-top: 24px;
+}
+
+/* h3 {
+  font-size: 1.2rem;
+} */
+
+.home_page_bottom_container {
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+/* h2 {
+  text-align: center;
+  margin-bottom: 50px;
+} */
+
+.home_page_bottom_section {
+  margin: 0 3rem;
+  display: grid;
+  grid-template-areas:
+    "home-page-image home-page-description"
+    "box3 box3";
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 0.1rem;
+  grid-row-gap: 2rem;
+}
+
+.home_page_image {
+  width: 20rem;
+  grid-area: home-page-image;
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.home_page_description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.home_page_description p {
+  margin: 20px;
+}
+
+.box3 {
+  grid-area: box3;
+}
+
+.bottom_pic {
+  width: 500px;
+  height: 300px;
+  box-shadow: 2px 2px 2px #888;
+  border-radius: 1rem;
+}
+
+@media (max-width: 1305px) {
+  .home_page_bottom_section,
+  .home_page_image,
+  .home_page_description,
   .box3 {
-    grid-area: box3;
+    font-size: 0.9rem;
+    display: block;
   }
-  
-  .title_pic {
-    width: 500px;
-    height: 300px;
-    box-shadow: 2px 2px 2px #888;
-    border-radius: 1rem;
-  }
-  
-  @media (max-width: 1024px) {
-    .home_page_bottom_section,
-    .home_page_image,
-    .home_page_description,
-    .box3 {
-      font-size: 0.9rem;
-      display: block;
-    }
-  
-    .home_page_image {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-  
-    .home_page_description {
-      margin-top: 1.4rem;
-    }
-  }
-  
-  .contact_btn {
-    background-color: #448c7e;
+
+  .home_page_image {
     display: flex;
-    margin: 0 auto;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 9px;
-    transition: 0.4s;
-    color: #fff;
-  }
-  
-  .contact_btn:hover {
-    background-color: aquamarine;
-    color: #000;
-  }
-  
-  @media only screen and (max-width: 900px) {
-    .slide_show {
-      height: 30vh;
-      padding-top: 2rem;
-    }
-    .home_page_image img {
-      width: 100%;
-    }
-  
-    .darken {
-      height: 30vh !important;
-    }
-  
-    .home_page_bottom_container {
-      padding-top: 0px;
-    }
-  
-    .arrow_right_container .arrow_left_container {
-      top: 39% !important;
-      right: 5% !important;
-    }
+    justify-content: center;
+    width: 100%; 
   }
 
-  @media only screen and (max-width: 480px) {
-    .home_page_bottom_section {
-      padding: 0;
-      margin: 0; 
-    }
+  /* img {
+    width: 60%;
+    height: 40%;
+  } */
 
+}
+
+.home_page_description {
+  margin-top: 1.4rem;
+}
+
+.contact_btn {
+  background-color: #448c7e;
+  display: flex;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 9px;
+  transition: 0.4s;
+  color: #fff;
+}
+
+.contact_btn:hover {
+  background-color: aquamarine;
+  color: #000;
+}
+
+@media only screen and (max-width: 900px) {
+  .slide_show {
+    height: 30vh;
+    padding-top: 2rem;
   }
-  
+  .home_page_image img {
+    width: 100%;
+  }
+
+  .darken {
+    height: 30vh !important;
+  }
+
+  .home_page_bottom_container {
+    padding-top: 0px;
+  }
+
+  .arrow_right_container .arrow_left_container {
+    top: 39% !important;
+    right: 5% !important;
+  }
+}

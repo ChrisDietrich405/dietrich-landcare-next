@@ -16,8 +16,7 @@ export default class Services extends React.Component {
       </Head>
         <div className={styles.services_main_container}>
           <div className={styles.services_container}>
-            <h1>Services</h1>
-            <hr />
+            <h1 className={styles.services_title}>Services</h1>
             <div className={styles.services_description} id="lawn_care">
               <div className={styles.snow_removal}>
                 <div>
