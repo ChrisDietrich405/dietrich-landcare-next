@@ -111,7 +111,6 @@ export default class Contact extends React.Component {
             }}
           />
 
-          {JSON.stringify(this.state)}
           <div className={styles.contact_form}>
             {"service" in this.state.error && (
               <p className="error-message">

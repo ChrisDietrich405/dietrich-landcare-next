@@ -39,7 +39,7 @@ export default class Services extends React.Component {
                 </div>
               </div>
             </div>
-            <div className={styles.services_description} id="power-washing">
+            <div className={styles.power_washing} id="power-washing">
               <div className={styles.services_image_description}>
                 <h3>Power Washing</h3>
                 <p>
@@ -80,7 +80,7 @@ export default class Services extends React.Component {
                 </div>
               </div>
             </div>
-            <div className={styles.services_description} id="stump-removal">
+            <div className={styles.stump_removal} id="stump-removal">
               <div className={styles.services_image_description}>
                 <h3>Stump Removal</h3>
                 <p>
