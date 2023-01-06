@@ -23,9 +23,9 @@ export default class Services extends React.Component {
                   <Image
                     height={770}
                     width={770}
-                    src="/images/snow-removal.png"
+                    src="/images/lawn-care.png"
                     className={styles.image}
-                    alt="snow-removal"
+                    alt="lawn-care"
                   />
                 </div>
                 <div>
@@ -53,7 +53,7 @@ export default class Services extends React.Component {
               <Image
                 height={370}
                 width={370}
-                src="/images/snow-removal.png"
+                src="/images/power-washing.jpg"
                 className={styles.image}
                 alt="snow-removal"
               />
@@ -70,12 +70,13 @@ export default class Services extends React.Component {
                   />
                 </div>
                 <div>
-                  <h3>Lawn Care</h3>
+                  <h3>Snow Removal</h3>
                   <p>
-                    Dietrich Land Care can make your lawn the envy of your
-                    neighborhood. Our Service Leaders and in-house agronomists
-                    (soil scientists) provide customized programs that eliminate
-                    weeds while bringing you a green, vibrant and healthy lawn.
+                  If you are stuck in your property and you have hard access
+                outside, grab the phone and call us. You don’t want to risk
+                being stuck for hours or going out at the expense of your
+                safety. We’ll help you get rid of snow and keep your sidewalk
+                clear.
                   </p>
                 </div>
               </div>
@@ -94,7 +95,7 @@ export default class Services extends React.Component {
               <Image
                 height={370}
                 width={370}
-                src="/images/snow-removal.png"
+                src="/images/stump-removal.jpg"
                 className={styles.image}
                 alt="snow-removal"
               />

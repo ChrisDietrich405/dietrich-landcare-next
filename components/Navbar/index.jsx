@@ -46,7 +46,7 @@ const Navbar = () => {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link href="/">
-                <a className="nav-link" aria-current="page">
+                <a className="nav-link text-white" aria-current="page">
                   Home
                 </a>
               </Link>
@@ -54,7 +54,7 @@ const Navbar = () => {
             {services && (
               <li className="nav-item dropdown">
                 <a
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle text-white"
                   href="#"
                   id="navbarDropdown"
                   role="button"
@@ -81,14 +81,14 @@ const Navbar = () => {
             )}
             <li className="nav-item">
               <Link href="/testimonials">
-                <a className="nav-link" aria-current="page">
+                <a className="nav-link text-white" aria-current="page">
                   Testimonials
                 </a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/contact">
-                <a className="nav-link" aria-current="page">
+                <a className="nav-link text-white" aria-current="page">
                   Contact
                 </a>
               </Link>{" "}

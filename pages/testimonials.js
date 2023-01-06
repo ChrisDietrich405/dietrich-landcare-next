@@ -18,20 +18,17 @@ export default class Testimonials extends React.Component {
                 borderRadius="10px"
                 width="350px"
                 height="350px"
-                src="/images/testimonial-landscape1.jpg"
+                src="/images/landcareTest.jpg"
                 alt="beautiful and clean garden"
               />
             </div>
-            <div className="col-12 col-lg-6 text-center testimonial-container-client">
+            <div
+              className={`"col-12 col-lg-6 text-center" ${styles.testimonial_container_client}`}
+            >
               <div className={styles.testimonial_person}>
-                <Image
-                  borderRadius="10px"
-                  width="100px"
-                  height="100px"
-                  src="/images/testimonial-person1.jpeg"
-                  alt="woman's profile"
-                />
-                <span>Mary Smith, Loch Raven</span>
+                <span>
+                  <h3>Mary Smith, Loch Raven</h3>
+                </span>
               </div>
               <p className={styles.quote}>
                 <span>
@@ -50,16 +47,13 @@ export default class Testimonials extends React.Component {
         </div>
         <div className={styles.testimonial_container}>
           <div className="row">
-            <div className="order-lg-0 order-1 col-12 col-lg-6 text-center testimonial-container-client">
+            <div
+              className={`"order-lg-0 order-1 col-12 col-lg-6 text-center" ${styles.testimonial_container_client}`}
+            >
               <div className={styles.testimonial_person}>
-                <Image
-                  borderRadius="10px"
-                  width="100px"
-                  height="100px"
-                  src="/images/testimonial-person1.jpeg"
-                  alt="woman profile"
-                />
-                <span>&nbsp;Alicia Jones, Towson</span>
+                <span>
+                  <h3>Alicia Jones, Towson</h3>
+                </span>
               </div>
               <p className={styles.quote}>
                 <span>
@@ -67,10 +61,11 @@ export default class Testimonials extends React.Component {
                 </span>
                 &nbsp; Devin has been amazing to work with. We've been using
                 them for a few months for landscape maintenance and have just
-                recently used them to remove a couple dead trees. The level of
-                service and design considerations have been far above anyone
-                I've worked with in the past. The entire team was professional
-                down to the last detail.
+                recently used them to remove a couple dead trees and to add
+                mulch and rocks to our front hill. The level of service and
+                design considerations have been far above anyone I've worked
+                with in the past. The entire team was professional down to the
+                last detail.
               </p>
             </div>
             <div className="order-lg-1 order-0 col-12 col-lg-6 text-center testimonial-pic ">
@@ -78,7 +73,7 @@ export default class Testimonials extends React.Component {
                 borderRadius="10px"
                 width="350px"
                 height="350px"
-                src="/images/testimonial-landscape2.jpg"
+                src="/images/landcareTest2.jpg"
                 alt="testimonial landscape"
               />
             </div>
@@ -89,22 +84,20 @@ export default class Testimonials extends React.Component {
             <div className="col-12 col-lg-6 text-center testimonial-pic ">
               <Image
                 borderRadius="10px"
+                backgroundSize="cover"
                 width="350px"
                 height="350px"
-                src="/images/testimonial-landscape3.jpg"
+                src="/images/landcareTest3.jpg"
                 alt=""
               />
             </div>
-            <div className="col-12 col-lg-6 text-center testimonial-container-client">
+            <div
+              className={`"col-12 col-lg-6 text-center" ${styles.testimonial_container_client}`}
+            >
               <div className={styles.testimonial_person}>
-                <Image
-                  borderRadius="10px"
-                  width="100px"
-                  height="100px"
-                  src="/images/testimonial-person1.jpeg"
-                  alt="man's profile"
-                />
-                <span>Robert Greene, Lutherville</span>
+                <span>
+                  <h3>Robert Greene, Lutherville</h3>
+                </span>
               </div>
               <p className={styles.quote}>
                 <span>
