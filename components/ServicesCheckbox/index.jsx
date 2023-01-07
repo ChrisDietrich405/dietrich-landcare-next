@@ -3,25 +3,26 @@ import styles from "./styles.module.css";
 
 const ServicesCheckbox = ({ isSubmitting, change }) => {
   const [lawnCare, setLawnCare] = useState(false);
-  const [powerWashing, setPowerWashing] = useState(false);
+  const [stonePavers, setStonePavers] = useState(false);
   const [stumpRemoval, setStumpRemoval] = useState(false);
   const [snowRemoval, setSnowRemoval] = useState(false);
 
   const filteredServices = (services) => {
     const filteredServices = Object.entries(services);
-    return filteredServices.filter((service) =>
-      service[1] === true).map(service => service[0] )
+    return filteredServices
+      .filter((service) => service[1] === true)
+      .map((service) => service[0]);
   };
 
   useEffect(() => {
     const services = {
       "Lawn Care": lawnCare,
-      "Powerwashing": powerWashing,
+      "StonePavers": stonePavers,
       "Stump Removal": stumpRemoval,
       "Snow Removal": snowRemoval,
     };
     change(filteredServices(services));
-  }, [lawnCare, powerWashing, stumpRemoval, snowRemoval]);
+  }, [lawnCare, stonePavers, stumpRemoval, snowRemoval]);
 
   return (
     <div>
@@ -42,13 +43,13 @@ const ServicesCheckbox = ({ isSubmitting, change }) => {
           </div>
           <div>
             <input
-              value={powerWashing}
-              onChange={(e) => setPowerWashing((prevState) => !prevState)}
-              name="power-washing"
+              value={stonePavers}
+              onChange={(e) => setStonePavers((prevState) => !prevState)}
+              name="stone-pavers"
               type="checkbox"
-              id="power-washing"
+              id="stone-pavers"
             />
-            <label htmlFor="power-washing">Power Washing</label>
+            <label htmlFor="stone-pavers">Stone Pavers</label>
           </div>
         </div>
         <div>
@@ -79,4 +80,3 @@ const ServicesCheckbox = ({ isSubmitting, change }) => {
 };
 
 export default ServicesCheckbox;
-

@@ -7,23 +7,27 @@ export default class Services extends React.Component {
   render() {
     return (
       <>
-      <Head>
-        <title>Services</title>
-        <meta
-          name="description"
-          content="Services provides a list of the services Dietrich Landcare, for example power washing,"
-        />
-      </Head>
+        <Head>
+          <title>Services</title>
+          <meta
+            name="description"
+            content="Services provides a list of the services Dietrich Landcare, for example power washing,"
+          />
+        </Head>
         <div className={styles.services_main_container}>
           <div className={styles.services_container}>
             <h1 className={styles.services_title}>Services</h1>
-            <div className={styles.services_description} id="lawn_care">
+            <div className={styles.services_description} id="lawn-care">
               <div className={styles.snow_removal}>
                 <div>
-                  <Image
-                    height={770}
-                    width={770}
-                    src="/images/lawn-care.png"
+                  <img
+                    style={{
+                      borderRadius: "10px",
+                      width: "375px",
+                      height: "350px",
+                      boxShadow: " rgba(0, 0, 0, 0.35) 0px 5px 15px",
+                    }}
+                    src="/images/lawncare.jpg"
                     className={styles.image}
                     alt="lawn-care"
                   />
@@ -32,51 +36,63 @@ export default class Services extends React.Component {
                   <h3>Lawn Care</h3>
                   <p>
                     Dietrich Land Care can make your lawn the envy of your
-                    neighborhood. Our Service Leaders and in-house agronomists
-                    (soil scientists) provide customized programs that eliminate
-                    weeds while bringing you a green, vibrant and healthy lawn.
+                    neighborhood. We don’t believe that one size fits all, as
+                    every lawn has unique needs and particular challenges in as
+                    far as climate, grasses, growing seasons, and soil varieties
+                    are concerned. We’ll match you with a skilled, experienced
+                    lawn care provider that will work wonders on your yard.
                   </p>
                 </div>
               </div>
             </div>
-            <div className={styles.power_washing} id="power-washing">
+            <div className={styles.power_washing} id="stone-pavers">
               <div className={styles.services_image_description}>
-                <h3>Power Washing</h3>
+                <h3>Stone Pavers</h3>
                 <p>
-                  We are one of the leading exterior cleaning service providers
-                  catering to residential and commercial soft washing, pressure
-                  washing, power washing, pressure cleaning, and exterior
-                  property maintenance in Maryland. We have been washing for 5
-                  years and know the "Ins and Outs" of the industry.
+                  What’s the best way to add style to your outdoor environment?
+                  Hardscape designs by Dietrich Land Care. We believe your
+                  outdoor environment should complement your lifestyle.From
+                  natural stone walkways, brick paver patios and fire features,
+                  to stunning stoops, retaining walls and built-in grills, we
+                  create complete outdoor living spaces for residential
+                  landscapes and deliver incredible value for commercial
+                  customers.
                 </p>
               </div>
-              <Image
-                height={370}
-                width={370}
-                src="/images/power-washing.jpg"
+              <img
+                style={{
+                  borderRadius: "10px",
+                  width: "375px",
+                  height: "350px",
+                  boxShadow: " rgba(0, 0, 0, 0.35) 0px 5px 15px",
+                }}
+                src="/images/pavers.jpg"
                 className={styles.image}
-                alt="snow-removal"
+                alt="pavers"
               />
             </div>
-            <div className={styles.services_description} id="lawn_care">
+            <div className={styles.services_description} id="rain-gardens">
               <div className={styles.snow_removal}>
                 <div>
-                  <Image
-                    height={770}
-                    width={770}
-                    src="/images/snow-removal.png"
+                  <img
+                    style={{
+                      borderRadius: "10px",
+                      width: "375px",
+                      height: "350px",
+                      boxShadow: " rgba(0, 0, 0, 0.35) 0px 5px 15px",
+                    }}
+                    src="/images/rain-gardens.jpg"
                     className={styles.image}
-                    alt="snow-removal"
+                    alt="rain-gardens"
                   />
                 </div>
                 <div>
-                  <h3>Snow Removal</h3>
+                  <h3>Rain Garden</h3>
                   <p>
-                  If you are stuck in your property and you have hard access
-                outside, grab the phone and call us. You don’t want to risk
-                being stuck for hours or going out at the expense of your
-                safety. We’ll help you get rid of snow and keep your sidewalk
-                clear.
+                    Rain gardens are an effective and nice looking way to reduce
+                    runoff from your property. Rain gardens are also very
+                    effective at removing pollutants and reducing the volume of
+                    runoff, especially when used for parking lot islands.
                   </p>
                 </div>
               </div>
@@ -92,12 +108,16 @@ export default class Services extends React.Component {
                   highest quality services and customer care.
                 </p>
               </div>
-              <Image
-                height={370}
-                width={370}
+              <img
+                style={{
+                  borderRadius: "10px",
+                  width: "375px",
+                  height: "350px",
+                  boxShadow: " rgba(0, 0, 0, 0.35) 0px 5px 15px",
+                }}
                 src="/images/stump-removal.jpg"
                 className={styles.image}
-                alt="snow-removal"
+                alt="stump-removal"
               />
             </div>
           </div>

@@ -11,8 +11,8 @@ import styles from "./styles.module.css";
 const Navbar = () => {
   const services = [
     { title: "Lawn Care", permalink: "lawn-care" },
-    { title: "Power Washing", permalink: "power-washing" },
-    { title: "Snow Removal", permalink: "snow-removal" },
+    { title: "Stone Pavers", permalink: "stone-pavers" },
+    { title: "Rain Gardens", permalink: "rain-gardens" },
     { title: "Stump Removal", permalink: "stump-removal" },
   ];
 

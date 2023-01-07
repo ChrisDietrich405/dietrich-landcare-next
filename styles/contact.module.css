@@ -8,7 +8,7 @@
 }
 
 .contact_title {
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
   width: 60%;
   border-bottom: 2px solid #000;
 }
@@ -84,8 +84,7 @@
   padding-right: 10px;
 }
 
-.textarea_name
-.input_name {
+.textarea_name .input_name {
   width: 275px;
   border-radius: 8px;
   border: 1px solid black;
@@ -149,5 +148,18 @@
 
   .contact_form_inputs {
     flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .contact_form_inputs {
+    gap: 10px !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .input_container input {
+    margin-top: 15px !important;
+    padding-left: 7px;
   }
 }

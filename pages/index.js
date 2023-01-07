@@ -10,7 +10,7 @@ export default class HomePage extends React.Component {
     return (
       <>
         <Head>
-          <title>Dietrich LandCare</title>
+          <title>Dietrich Land Care</title>
           <meta
             name="description"
             content="Dietrich Land Care is a landscaping company specializing in "
@@ -23,10 +23,7 @@ export default class HomePage extends React.Component {
             property="og:description"
             content="Dietrich Land Care is a landscaping company specializing in "
           />
-          <meta
-            property="og:image"
-            content="https://example.com/logo.png"
-          />
+          <meta property="og:image" content="https://example.com/logo.png" />
 
           <link rel="icon" href="/favicon.ico" />
           <link
@@ -48,20 +45,16 @@ export default class HomePage extends React.Component {
             timeOut={3000}
             images={[
               {
-                url: "/images/scroll-image1.png",
-                title: "Hedge Trimming",
+                url: "/images/scroll-image1.jpg",
+                title: "Rock Beds",
               },
               {
-                url: "/images/scroll-image2.png",
-                title: "Lawn Mowing",
+                url: "/images/scroll-image2.jpg",
+                title: "Sod Installation",
               },
               {
-                url: "/images/scroll-image3.png",
+                url: "/images/scroll-image3.jpg",
                 title: "Mulching",
-              },
-              {
-                url: "/images/scroll-image4.png",
-                title: "Retaining Walls",
               },
             ]}
           ></SlideShow>
@@ -81,24 +74,24 @@ export default class HomePage extends React.Component {
             </div>
             <div className={styles.home_page_description}>
               <p>
-                Our professionally trained landscape designers are committed to
-                surpassing your expectations and doing everything we can to
-                ensure you are proud of your landscape.
+                Our professionally trained landscape crew is committed to going
+                beyond your expectations and doing everything we can to ensure
+                you are proud of your landscape.
               </p>
               <p>
                 {" "}
-                We offer a number of different landscape services that you can
-                choose from, and we take the time to customize it to your
-                specific needs in order for it to reflect you best and ensure it
-                aligns to the outdoor activities you enjoy the most.{" "}
+                We provide many different landscape services that you can choose
+                from, and we take the time to customize them to your individual
+                needs in order for them to reflect you best and ensure they
+                align to the outdoor activities you enjoy the most.{" "}
               </p>{" "}
               <p>
                 {" "}
-                We are certified in all aspects of landscaping that offers you
-                efficient and dependable services that suit your budget and
-                needs best.We craft innovative patios, terraces, retaining
-                walls, dry rock creeks, outdoor fireplaces, walkways,
-                energy-efficient lighting and more.
+                We are certified in all areas of landscaping. Our team is able
+                to deliver efficient and dependable services that suit your
+                budget and needs best. We craft innovative patios, terraces,
+                retaining walls, dry rock creeks, outdoor fireplaces, walkways,
+                and more.
               </p>
             </div>
 

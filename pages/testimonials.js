@@ -14,12 +14,16 @@ export default class Testimonials extends React.Component {
           <div className="row">
             <div className="col-12 col-lg-6 text-center testimonial-pic">
               {" "}
-              <Image
-                borderRadius="10px"
-                width="350px"
-                height="350px"
+              <img
+                style={{
+                  borderRadius: "10px",
+                  width: "375px",
+                  height: "350px",
+                  boxShadow: " rgba(0, 0, 0, 0.35) 0px 5px 15px",
+                }}
                 src="/images/landcareTest.jpg"
-                alt="beautiful and clean garden"
+                className={styles.image}
+                alt="stump-removal"
               />
             </div>
             <div
@@ -27,7 +31,7 @@ export default class Testimonials extends React.Component {
             >
               <div className={styles.testimonial_person}>
                 <span>
-                  <h3>Mary Smith, Loch Raven</h3>
+                  <h3>Mary Stein, Loch Raven</h3>
                 </span>
               </div>
               <p className={styles.quote}>
@@ -35,12 +39,12 @@ export default class Testimonials extends React.Component {
                   <ImQuotesLeft />
                 </span>
                 &nbsp;I had fallen behind on my gardening and called Dietrich
-                Landcare for a clean up/regular landscaping service. They were
-                prompt in getting back to my inquiry. Devin came out within the
-                week to take a look at the property and get me a quote. He was
-                quick, professional and gave me a realistic timeline of when I
-                could be fit into their schedule. I would not hesitate to
-                recommend this landscaping company to anyone.{" "}
+                Land Care for a clean up/regular landscaping service. They got
+                back to me very quickly. Devin came out within a few days to
+                take a look at the property and get me a quote. He was quick,
+                professional and gave me a realistic timeline of when he would
+                complete the job. I would not hesitate to recommend this
+                landscaping company to anyone.{" "}
               </p>
             </div>
           </div>
@@ -60,21 +64,25 @@ export default class Testimonials extends React.Component {
                   <ImQuotesLeft />
                 </span>
                 &nbsp; Devin has been amazing to work with. We've been using
-                them for a few months for landscape maintenance and have just
-                recently used them to remove a couple dead trees and to add
-                mulch and rocks to our front hill. The level of service and
-                design considerations have been far above anyone I've worked
-                with in the past. The entire team was professional down to the
-                last detail.
+                them for a few months for landscaping and have just recently
+                used them to remove a couple dead trees and to add mulch and
+                rocks to our front hill. The level of service and design
+                considerations have been far above anyone I've worked with in
+                the past. The entire team was extremely professional, down to
+                the last detail.
               </p>
             </div>
             <div className="order-lg-1 order-0 col-12 col-lg-6 text-center testimonial-pic ">
-              <Image
-                borderRadius="10px"
-                width="350px"
-                height="350px"
+              <img
+                style={{
+                  borderRadius: "10px",
+                  width: "375px",
+                  height: "350px",
+                  boxShadow: " rgba(0, 0, 0, 0.35) 0px 5px 15px",
+                }}
                 src="/images/landcareTest2.jpg"
-                alt="testimonial landscape"
+                className={styles.image}
+                alt="stump-removal"
               />
             </div>
           </div>
@@ -82,13 +90,16 @@ export default class Testimonials extends React.Component {
         <div className={styles.testimonial_container}>
           <div className="row">
             <div className="col-12 col-lg-6 text-center testimonial-pic ">
-              <Image
-                borderRadius="10px"
-                backgroundSize="cover"
-                width="350px"
-                height="350px"
+              <img
+                style={{
+                  borderRadius: "10px",
+                  width: "375px",
+                  height: "350px",
+                  boxShadow: " rgba(0, 0, 0, 0.35) 0px 5px 15px",
+                }}
                 src="/images/landcareTest3.jpg"
-                alt=""
+                className={styles.image}
+                alt="stump-removal"
               />
             </div>
             <div
@@ -103,10 +114,10 @@ export default class Testimonials extends React.Component {
                 <span>
                   <ImQuotesLeft />
                 </span>
-                &nbsp; Highly recommend! All of the workers were all
-                professional and friendly. Devin was patient and informative
-                throughout, from the planning stages to the final product. Our
-                new lawn and patio look even better than we imagined!{" "}
+                &nbsp; Highly recommend! The entire crew were all professional
+                and friendly. Devin was patient and informative throughout, from
+                the planning stages to the final product. Our new lawn and patio
+                exceeded our expectations!{" "}
               </p>
             </div>
           </div>

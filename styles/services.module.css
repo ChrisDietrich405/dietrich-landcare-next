@@ -68,8 +68,8 @@
   align-items: center;
 }
 
-.snow_removal .image {
-  width: 599px;
+.image {
+  box-shadow: " rgba(0, 0, 0, 0.35) 0px 5px 15px !important"
 }
 
 /* .services_description .image {
