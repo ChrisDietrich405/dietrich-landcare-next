@@ -106,11 +106,10 @@
 
   .testimonial_container_client {
     width: 100%;
-    background: green;  
+    margin: 0 auto;  
   }
 
   .quote {
-    background: purple;
     width: 100% !important;
     display: flex;
     justify-content: center; 
