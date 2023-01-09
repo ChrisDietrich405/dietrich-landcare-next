@@ -91,23 +91,27 @@
 }
 
 .textarea_name {
-  height: 100px;
+  height: 208px;
   resize: none;
 }
 
 .input_container {
-  width: 192px;
+  width: 250px;
   display: flex;
   flex-direction: column;
 }
 
 .input_container input {
   padding-left: 7px;
+  border-radius: 4px;
+  outline: none;
+  margin-bottom: 5px;
 }
 
 .input_container textarea {
   padding-left: 7px;
   padding-top: 3px;
+  border-radius: 4px;
 }
 
 .error_message {
@@ -117,7 +121,7 @@
 }
 
 .contact_form_inputs {
-  gap: 90px;
+  gap: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,7 +147,7 @@
   }
 
   .textarea_name {
-    height: 193px;
+    height: 208px;
   }
 
   .contact_form_inputs {
@@ -159,7 +163,7 @@
   }
 
   .input_container input {
-    margin-top: 15px !important;
-    padding-left: 7px;
+    margin: 5px 0px 10px 0px !important;
+    padding-left: 27px;
   }
 }

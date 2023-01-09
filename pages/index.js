@@ -46,7 +46,7 @@ export default class HomePage extends React.Component {
             images={[
               {
                 url: "/images/scroll-image1.jpg",
-                title: "Rock Beds",
+                title: "Fence Installation",
               },
               {
                 url: "/images/scroll-image2.jpg",
@@ -54,7 +54,7 @@ export default class HomePage extends React.Component {
               },
               {
                 url: "/images/scroll-image3.jpg",
-                title: "Mulching",
+                title: "Mulch Installation",
               },
             ]}
           ></SlideShow>
@@ -64,14 +64,17 @@ export default class HomePage extends React.Component {
           <section className={styles.home_page_bottom_section}>
             <h1 className={styles.home_page_title}>Dietrich Land Care</h1>
             <div className={styles.home_page_image}>
-              <Image
+              <img
                 src="/images/regrades.jpg"
-                width="430px"
-                height="230px"
+                width="630px"
+                height="330px"
                 alt=""
-                className={styles.title_pic}
+                style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+               
               />
             </div>
+          </section>
+          <section>
             <div className={styles.home_page_description}>
               <p>
                 Our professionally trained landscape crew is committed to going
@@ -104,6 +107,6 @@ export default class HomePage extends React.Component {
           </section>
         </div>
       </>
-    )
+    );
   }
 }

@@ -70,10 +70,6 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .testimonial_container_client {
-    max-width: 90%;
-  }
-
   .testimonial_person {
     max-width: 80%;
     margin: 0 auto;
@@ -106,12 +102,12 @@
 
   .testimonial_container_client {
     width: 100%;
-    margin: 0 auto;  
+    margin: 0 auto;
   }
 
   .quote {
     width: 100% !important;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
   }
 }
