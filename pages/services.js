@@ -87,7 +87,7 @@ export default class Services extends React.Component {
                   />
                 </div>
                 <div>
-                  <h3>Rain Garden</h3>
+                  <h3>Rain Gardens</h3>
                   <p>
                     Rain gardens are an effective and nice looking way to reduce
                     runoff from your property. Rain gardens are also very

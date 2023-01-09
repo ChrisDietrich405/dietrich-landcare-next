@@ -36,7 +36,7 @@ export default class Testimonials extends React.Component {
               </div>
               <p className={styles.quote}>
                 <span>
-                  <ImQuotesLeft />
+                  <ImQuotesLeft style={{ marginBottom: "8px" }} />
                 </span>
                 &nbsp;I had fallen behind on my gardening and called Dietrich
                 Land Care for a clean up/regular landscaping service. They got
@@ -61,7 +61,7 @@ export default class Testimonials extends React.Component {
               </div>
               <p className={styles.quote}>
                 <span>
-                  <ImQuotesLeft />
+                  <ImQuotesLeft style={{ marginBottom: "8px" }} />
                 </span>
                 &nbsp; Devin has been amazing to work with. We've been using
                 them for a few months for landscaping and have just recently
@@ -112,7 +112,7 @@ export default class Testimonials extends React.Component {
               </div>
               <p className={styles.quote}>
                 <span>
-                  <ImQuotesLeft />
+                  <ImQuotesLeft style={{ marginBottom: "8px" }} />
                 </span>
                 &nbsp; Highly recommend! The entire crew were all professional
                 and friendly. Devin was patient and informative throughout, from

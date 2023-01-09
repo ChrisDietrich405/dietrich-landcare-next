@@ -1,4 +1,6 @@
 .testimonial {
+  width: 90%;
+  margin: 1rem auto 0rem; 
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -109,5 +111,9 @@
     width: 100% !important;
     display: flex;
     justify-content: center;
+  }
+
+  .quote svg {
+    margin-bottom: 30px;
   }
 }
