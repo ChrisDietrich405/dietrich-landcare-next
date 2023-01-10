@@ -36,11 +36,11 @@ export default class Testimonials extends React.Component {
               </div>
               <p className={styles.quote}>
                 <span>
-                  <ImQuotesLeft style={{ marginBottom: "8px" }} />
+                  <ImQuotesLeft style={{ marginBottom: "8px", marginRight: "3px" }} />
                 </span>
-                &nbsp;Devin and his crew did an excellent job trimming and
-                clearing out overgrown bushes as well as mulching on an older
-                home. He showed up when he said he would, his staff was very
+                Devin and his crew did an excellent job trimming and clearing
+                out overgrown bushes as well as mulching on an older home. He
+                showed up when he said he would, his staff was very
                 accommodating and they got it done quickly. Highly recommend his
               </p>
             </div>
@@ -58,7 +58,7 @@ export default class Testimonials extends React.Component {
               </div>
               <p className={styles.quote}>
                 <span>
-                  <ImQuotesLeft style={{ marginBottom: "8px" }} />
+                  <ImQuotesLeft style={{ marginBottom: "8px", marginRight: "3px" }} />
                 </span>
                 &nbsp; I've been looking for help with our landscaping and yard
                 cleanup/mulching for quite awhile. A few people I contacted were
@@ -109,7 +109,7 @@ export default class Testimonials extends React.Component {
               </div>
               <p className={styles.quote}>
                 <span>
-                  <ImQuotesLeft style={{ marginBottom: "8px" }} />
+                  <ImQuotesLeft style={{ marginBottom: "8px", marginRight: "3px"}} />
                 </span>
                 &nbsp; Dietrich Land Care recently did a huge backyard cleanup
                 project for us, and it truly exceeded our expectations. They

@@ -84,10 +84,20 @@
   padding-right: 10px;
 }
 
-.textarea_name .input_name {
+.textarea_name {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   width: 275px;
   border-radius: 8px;
-  border: 1px solid black;
+  border-color: none;
+}
+
+.input_name {
+  width: 275px;
+  border-radius: 8px;
+  border-color: none;
+  background-color: blue;
 }
 
 .textarea_name {

@@ -12,7 +12,7 @@ export default class Footer extends React.Component {
       return timeNow;
     }
     return (
-      <div className={styles.footer}>
+      <footer className={styles.footer}>
         <div className={styles.footer_container}>
           <div className={styles.footer_container_top}>
             <div className={styles.footer_tablet_container}>
@@ -67,12 +67,12 @@ export default class Footer extends React.Component {
             </div>
           </div>
           <div className={styles.footer_container_bottom}>
-            <div className={styles.footer_copyright}>
-              <h4>DietrichLandCare©{currentTime()}</h4>
-            </div>
+            <address className={styles.footer_copyright}>
+              <p>DietrichLandCare©{currentTime()}</p>
+            </address>
           </div>
         </div>
-      </div>
+      </footer>
     );
   }
 }

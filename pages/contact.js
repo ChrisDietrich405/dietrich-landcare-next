@@ -35,8 +35,7 @@ export default class Contact extends React.Component {
 
   // async componentDidMount() {
   //   console.log(process.env.REACT_APP_SERVICE_ID);
-    
-    
+
   // }
 
   render() {
@@ -54,20 +53,35 @@ export default class Contact extends React.Component {
             <span className={styles.contact_info_icons}>
               <AiFillPhone />
             </span>
-            <p>(443) 608-3258</p>
+            <p>
+              <a
+                href="tel:+4436083258"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                (443) 608-3258
+              </a>
+            </p>
           </li>
           <li className={styles.contact_information}>
             <span className={styles.contact_info_icons}>
               <MdEmail />
             </span>
 
-            <p>office@dietrichlandcare.com</p>
+            <p>
+              <a
+                href="mailto:office@dietrichlandcare.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                office@dietrichlandcare.com
+              </a>
+            </p>
           </li>
           <li className={styles.contact_information}>
             <span className={styles.contact_info_icons}>
               <ImLocation2 />
             </span>
-
             <p>Towson, MD 21239</p>
           </li>
         </ul>

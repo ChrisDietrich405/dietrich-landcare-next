@@ -17,7 +17,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="navbar navbar-expand-md">
+    <header className="navbar navbar-expand-md">
       <div className="container-fluid">
         <Link href="/">
           <a className="navbar-brand mr-4">
@@ -42,7 +42,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <nav className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link href="/">
@@ -110,9 +110,9 @@ const Navbar = () => {
               <AiFillInstagram className={styles.social_media_icon} />
             </a>
           </div>
-        </div>
+        </nav>
       </div>
-    </nav>
+    </header>
   );
 };
 
