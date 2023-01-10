@@ -31,20 +31,17 @@ export default class Testimonials extends React.Component {
             >
               <div className={styles.testimonial_person}>
                 <span>
-                  <h3>Mary Stein, Loch Raven</h3>
+                  <h3>Kathleen R, Loch Raven</h3>
                 </span>
               </div>
               <p className={styles.quote}>
                 <span>
                   <ImQuotesLeft style={{ marginBottom: "8px" }} />
                 </span>
-                &nbsp;I had fallen behind on my keeping up with my backyard and called Dietrich
-                Land Care for a clean up/regular landscaping service. They got
-                back to me immediately. Devin came out within a few days to
-                take a look at the property and get me a quote. He was quick,
-                professional and gave me a realistic timeline of when he would
-                complete the job. I would not hesitate to recommend this
-                landscaping company to anyone.{" "}
+                &nbsp;Devin and his crew did an excellent job trimming and
+                clearing out overgrown bushes as well as mulching on an older
+                home. He showed up when he said he would, his staff was very
+                accommodating and they got it done quickly. Highly recommend his
               </p>
             </div>
           </div>
@@ -56,20 +53,20 @@ export default class Testimonials extends React.Component {
             >
               <div className={styles.testimonial_person}>
                 <span>
-                  <h3>Alicia Jones, Towson</h3>
+                  <h3>Annie S, Towson</h3>
                 </span>
               </div>
               <p className={styles.quote}>
                 <span>
                   <ImQuotesLeft style={{ marginBottom: "8px" }} />
                 </span>
-                &nbsp; Devin has been amazing to work with. We've been using
-                them for a few months for landscaping and have just recently
-                used them to remove a couple dead trees and to add mulch and
-                rocks to our front hill. The quality of service and design
-                creativity have been far above anyone I've worked with in
-                the past. The entire team was extremely professional, down to
-                the last detail.
+                &nbsp; I've been looking for help with our landscaping and yard
+                cleanup/mulching for quite awhile. A few people I contacted were
+                too expensive or never followed through. I found Dietrich Land
+                care on Nextdoor through several recommendations. Devin and his
+                team did an AMAZING job. They surpassed my expectations and were
+                reasonably priced. I would definitely recommend them! Super
+                awesome 5 stars!!!!
               </p>
             </div>
             <div className="order-lg-1 order-0 col-12 col-lg-6 text-center testimonial-pic ">
@@ -107,17 +104,20 @@ export default class Testimonials extends React.Component {
             >
               <div className={styles.testimonial_person}>
                 <span>
-                  <h3>Robert Greene, Lutherville</h3>
+                  <h3>Laura A, Lutherville</h3>
                 </span>
               </div>
               <p className={styles.quote}>
                 <span>
                   <ImQuotesLeft style={{ marginBottom: "8px" }} />
                 </span>
-                &nbsp; I highly recommend Dietrich Land Care! The entire crew were all professional
-                flexible, and friendly. Devin was patient and informative throughout, from
-                the planning stages to the final product. Our new lawn and patio
-                exceeded our expectations!{" "}
+                &nbsp; Dietrich Land Care recently did a huge backyard cleanup
+                project for us, and it truly exceeded our expectations. They
+                arrived right on time and went to town on our backyard with a
+                huge team. The work was completed ahead of schedule and with
+                great care and attention to detail. Truly, our backyard has
+                never looked better. Give them a call - you won’t be
+                disappointed!
               </p>
             </div>
           </div>
