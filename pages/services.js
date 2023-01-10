@@ -11,14 +11,14 @@ export default class Services extends React.Component {
           <title>Services</title>
           <meta
             name="description"
-            content="Services provides a list of the services Dietrich Landcare, for example power washing,"
+            content="Services provides a list of the services Dietrich Landcare, including lawn care, installing stone pavers, rain gardens and stump removal,"
           />
         </Head>
-        <div className={styles.services_main_container}>
+        <main className={styles.services_main_container}>
           <div className={styles.services_container}>
             <h1 className={styles.services_title}>Services</h1>
             <div className={styles.services_description} id="lawn-care">
-              <div className={styles.snow_removal}>
+              <div className={styles.lawn_care}>
                 <div>
                   <img
                     style={{
@@ -29,7 +29,7 @@ export default class Services extends React.Component {
                     }}
                     src="/images/lawncare.jpg"
                     className={styles.image}
-                    alt="lawn-care"
+                    alt="lawncare"
                   />
                 </div>
                 <div>
@@ -45,7 +45,7 @@ export default class Services extends React.Component {
                 </div>
               </div>
             </div>
-            <div className={styles.power_washing} id="stone-pavers">
+            <div className={styles.stone_pavers} id="stone-pavers">
               <div className={styles.services_image_description}>
                 <h3>Stone Pavers</h3>
                 <p>
@@ -72,7 +72,7 @@ export default class Services extends React.Component {
               />
             </div>
             <div className={styles.services_description} id="rain-gardens">
-              <div className={styles.snow_removal}>
+              <div className={styles.rain_gardens}>
                 <div>
                   <img
                     style={{
@@ -121,7 +121,7 @@ export default class Services extends React.Component {
               />
             </div>
           </div>
-        </div>
+        </main>
       </>
     );
   }

@@ -8,7 +8,7 @@ import { ImQuotesLeft } from "react-icons/im";
 export default class Testimonials extends React.Component {
   render() {
     return (
-      <div className={styles.testimonial}>
+      <main className={styles.testimonial}>
         <h1 className={styles.title}>Testimonials</h1>
         <div className={styles.testimonial_container}>
           <div className="row">
@@ -38,9 +38,9 @@ export default class Testimonials extends React.Component {
                 <span>
                   <ImQuotesLeft style={{ marginBottom: "8px" }} />
                 </span>
-                &nbsp;I had fallen behind on my gardening and called Dietrich
+                &nbsp;I had fallen behind on my keeping up with my backyard and called Dietrich
                 Land Care for a clean up/regular landscaping service. They got
-                back to me very quickly. Devin came out within a few days to
+                back to me immediately. Devin came out within a few days to
                 take a look at the property and get me a quote. He was quick,
                 professional and gave me a realistic timeline of when he would
                 complete the job. I would not hesitate to recommend this
@@ -66,8 +66,8 @@ export default class Testimonials extends React.Component {
                 &nbsp; Devin has been amazing to work with. We've been using
                 them for a few months for landscaping and have just recently
                 used them to remove a couple dead trees and to add mulch and
-                rocks to our front hill. The level of service and design
-                considerations have been far above anyone I've worked with in
+                rocks to our front hill. The quality of service and design
+                creativity have been far above anyone I've worked with in
                 the past. The entire team was extremely professional, down to
                 the last detail.
               </p>
@@ -114,15 +114,15 @@ export default class Testimonials extends React.Component {
                 <span>
                   <ImQuotesLeft style={{ marginBottom: "8px" }} />
                 </span>
-                &nbsp; Highly recommend! The entire crew were all professional
-                and friendly. Devin was patient and informative throughout, from
+                &nbsp; I highly recommend Dietrich Land Care! The entire crew were all professional
+                flexible, and friendly. Devin was patient and informative throughout, from
                 the planning stages to the final product. Our new lawn and patio
                 exceeded our expectations!{" "}
               </p>
             </div>
           </div>
         </div>
-      </div>
+      </main>
     );
   }
 }

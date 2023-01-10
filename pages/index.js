@@ -13,15 +13,15 @@ export default class HomePage extends React.Component {
           <title>Dietrich Land Care</title>
           <meta
             name="description"
-            content="Dietrich Land Care is a landscaping company specializing in "
+            content="Dietrich Land Care is a landscaping company specializing in fence installation, stump removal, snow removal, regrades and mulch installation "
           />
 
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://example.com" />
-          <meta property="og:title" content="Maryland Vegan" />
+          <meta property="og:title" content="Dietrich Land Care" />
           <meta
             property="og:description"
-            content="Dietrich Land Care is a landscaping company specializing in "
+            content="Dietrich Land Care is a landscaping company specializing in fence installation, stump removal, snow removal, regrades and mulch installation "
           />
           <meta property="og:image" content="https://example.com/logo.png" />
 
@@ -60,7 +60,7 @@ export default class HomePage extends React.Component {
           ></SlideShow>
         </div>
 
-        <div className={styles.home_page_bottom_container}>
+        <main className={styles.home_page_bottom_container}>
           <section className={styles.home_page_bottom_section}>
             <h1 className={styles.home_page_title}>Dietrich Land Care</h1>
             <div className={styles.home_page_image}>
@@ -70,7 +70,6 @@ export default class HomePage extends React.Component {
                 height="330px"
                 alt=""
                 style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
-               
               />
             </div>
           </section>
@@ -85,16 +84,15 @@ export default class HomePage extends React.Component {
                 {" "}
                 We provide many different landscape services that you can choose
                 from, and we take the time to customize them to your individual
-                needs in order for them to reflect you best and ensure they
-                align to the outdoor activities you enjoy the most.{" "}
+                needs. Our end goal is to ensure that your property reflects your individuality.{" "}
               </p>{" "}
               <p>
                 {" "}
                 We are certified in all areas of landscaping. Our team is able
                 to deliver efficient and dependable services that suit your
-                budget and needs best. We craft innovative patios, terraces,
-                retaining walls, dry rock creeks, outdoor fireplaces, walkways,
-                and more.
+                budget and needs best. We craft innovative patios,
+                retaining walls, rain gardens, walkways, fences
+                and more!
               </p>
             </div>
 
@@ -105,7 +103,7 @@ export default class HomePage extends React.Component {
               Contact us today!
             </button>
           </section>
-        </div>
+        </main>
       </>
     );
   }

@@ -33,15 +33,15 @@ export default class Contact extends React.Component {
     };
   }
 
-  async componentDidMount() {
-    console.log(process.env.REACT_APP_SERVICE_ID);
+  // async componentDidMount() {
+  //   console.log(process.env.REACT_APP_SERVICE_ID);
     
     
-  }
+  // }
 
   render() {
     return (
-      <div className={styles.contact_viewport}>
+      <main className={styles.contact_viewport}>
         <div className={styles.contact_header}>
           <h1 className={styles.contact_title}>Let's get in touch!</h1>
           <p>
@@ -252,7 +252,7 @@ export default class Contact extends React.Component {
           </form>
         </div>
         <ToastContainer />
-      </div>
+      </main>
     );
   }
   onSubmit(event) {
